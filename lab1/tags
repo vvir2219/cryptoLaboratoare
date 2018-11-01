@@ -1,0 +1,47 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AffineCipher	EncryptionAlgorithms.py	/^class AffineCipher(EncryptionAlgorithm):$/;"	c
+BelasoCipher	EncryptionAlgorithms.py	/^class BelasoCipher(EncryptionAlgorithm):$/;"	c
+CaesarCipher	EncryptionAlgorithms.py	/^class CaesarCipher(EncryptionAlgorithm):$/;"	c
+EncryptionAlgorithm	EncryptionAlgorithms.py	/^class EncryptionAlgorithm:$/;"	c
+SubstitutionCipher	EncryptionAlgorithms.py	/^class SubstitutionCipher(EncryptionAlgorithm):$/;"	c
+ValidationException	EncryptionAlgorithms.py	/^from Exceptions import ValidationException$/;"	i
+ValidationException	Exceptions.py	/^class ValidationException(Exception):$/;"	c
+__init__	EncryptionAlgorithms.py	/^    def __init__(self, alphabet):$/;"	m	class:EncryptionAlgorithm
+_decrypt	EncryptionAlgorithms.py	/^    def _decrypt(self, key, text):$/;"	m	class:AffineCipher
+_decrypt	EncryptionAlgorithms.py	/^    def _decrypt(self, key, text):$/;"	m	class:BelasoCipher
+_decrypt	EncryptionAlgorithms.py	/^    def _decrypt(self, key, text):$/;"	m	class:CaesarCipher
+_decrypt	EncryptionAlgorithms.py	/^    def _decrypt(self, key, text):$/;"	m	class:EncryptionAlgorithm
+_decrypt	EncryptionAlgorithms.py	/^    def _decrypt(self, key, text):$/;"	m	class:SubstitutionCipher
+_egcd	EncryptionAlgorithms.py	/^def _egcd(a, b):$/;"	f
+_encrypt	EncryptionAlgorithms.py	/^    def _encrypt(self, key, text):$/;"	m	class:AffineCipher
+_encrypt	EncryptionAlgorithms.py	/^    def _encrypt(self, key, text):$/;"	m	class:BelasoCipher
+_encrypt	EncryptionAlgorithms.py	/^    def _encrypt(self, key, text):$/;"	m	class:CaesarCipher
+_encrypt	EncryptionAlgorithms.py	/^    def _encrypt(self, key, text):$/;"	m	class:EncryptionAlgorithm
+_encrypt	EncryptionAlgorithms.py	/^    def _encrypt(self, key, text):$/;"	m	class:SubstitutionCipher
+_gcd	EncryptionAlgorithms.py	/^def _gcd(a, b):$/;"	f
+_validateAlphabet	EncryptionAlgorithms.py	/^    def _validateAlphabet(self, alphabet):$/;"	m	class:EncryptionAlgorithm
+_validateCipherText	EncryptionAlgorithms.py	/^    def _validateCipherText(self, key, text):$/;"	m	class:SubstitutionCipher
+_validateCipherText	EncryptionAlgorithms.py	/^    def _validateCipherText(self, text):$/;"	m	class:AffineCipher
+_validateCipherText	EncryptionAlgorithms.py	/^    def _validateCipherText(self, text):$/;"	m	class:BelasoCipher
+_validateCipherText	EncryptionAlgorithms.py	/^    def _validateCipherText(self, text):$/;"	m	class:CaesarCipher
+_validateCipherText	EncryptionAlgorithms.py	/^    def _validateCipherText(self, text):$/;"	m	class:EncryptionAlgorithm
+_validateKey	EncryptionAlgorithms.py	/^    def _validateKey(self, key):$/;"	m	class:AffineCipher
+_validateKey	EncryptionAlgorithms.py	/^    def _validateKey(self, key):$/;"	m	class:BelasoCipher
+_validateKey	EncryptionAlgorithms.py	/^    def _validateKey(self, key):$/;"	m	class:CaesarCipher
+_validateKey	EncryptionAlgorithms.py	/^    def _validateKey(self, key):$/;"	m	class:EncryptionAlgorithm
+_validateKey	EncryptionAlgorithms.py	/^    def _validateKey(self, key):$/;"	m	class:SubstitutionCipher
+_validatePlainText	EncryptionAlgorithms.py	/^    def _validatePlainText(self, text):$/;"	m	class:AffineCipher
+_validatePlainText	EncryptionAlgorithms.py	/^    def _validatePlainText(self, text):$/;"	m	class:BelasoCipher
+_validatePlainText	EncryptionAlgorithms.py	/^    def _validatePlainText(self, text):$/;"	m	class:CaesarCipher
+_validatePlainText	EncryptionAlgorithms.py	/^    def _validatePlainText(self, text):$/;"	m	class:EncryptionAlgorithm
+_validatePlainText	EncryptionAlgorithms.py	/^    def _validatePlainText(self, text):$/;"	m	class:SubstitutionCipher
+decrypt	EncryptionAlgorithms.py	/^    def decrypt(self, key, text):$/;"	m	class:EncryptionAlgorithm
+decrypt	EncryptionAlgorithms.py	/^    def decrypt(self, key, text):$/;"	m	class:SubstitutionCipher
+egcd	EncryptionAlgorithms.py	/^def egcd(a, b):$/;"	f
+encrypt	EncryptionAlgorithms.py	/^    def encrypt(self, key, text):$/;"	m	class:EncryptionAlgorithm
+gcd	EncryptionAlgorithms.py	/^def gcd(a, b):$/;"	f
