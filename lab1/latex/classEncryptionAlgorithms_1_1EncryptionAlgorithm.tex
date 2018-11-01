@@ -1,0 +1,263 @@
+\hypertarget{classEncryptionAlgorithms_1_1EncryptionAlgorithm}{}\section{Encryption\+Algorithms.\+Encryption\+Algorithm Class Reference}
+\label{classEncryptionAlgorithms_1_1EncryptionAlgorithm}\index{Encryption\+Algorithms.\+Encryption\+Algorithm@{Encryption\+Algorithms.\+Encryption\+Algorithm}}
+
+
+Base encryption algorigm class, defines the A\+PI.  
+
+
+Inheritance diagram for Encryption\+Algorithms.\+Encryption\+Algorithm\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.723514cm]{classEncryptionAlgorithms_1_1EncryptionAlgorithm}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm_a8916994ba410f389e2cdfd5d77c2d8fa}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ad43b0d5680d18b7bc62848864e496684}{alphabet}})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm_af584e5bbf78770ca1d8f8c08c06e0dc2}{set\+Alphabet}} (self, \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ad43b0d5680d18b7bc62848864e496684}{alphabet}})
+\begin{DoxyCompactList}\small\item\em Sets the new alphabet, validates it. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ac8e6b3a5b536ba2b3ed86f4f635be679}{encrypt}} (self, key, text)
+\begin{DoxyCompactList}\small\item\em Encryption function, validates key and plaintext. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ab0666e938c8fbcce0934f145288397d9}{decrypt}} (self, key, text)
+\begin{DoxyCompactList}\small\item\em Decryption function, validates key and ciphertext. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ad43b0d5680d18b7bc62848864e496684}{alphabet}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm_af3d6de15270153827e6928c5e9fd65be}{\+\_\+validate\+Alphabet}} (self, \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ad43b0d5680d18b7bc62848864e496684}{alphabet}})
+\begin{DoxyCompactList}\small\item\em internal method for validating the alphabet \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm_af28e6d27846bd1690122b68edb95a486}{\+\_\+validate\+Key}} (self, key)
+\begin{DoxyCompactList}\small\item\em Validates the key. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm_a78d73cf66cbaca8f534bbfd5609a984d}{\+\_\+validate\+Plain\+Text}} (self, text)
+\begin{DoxyCompactList}\small\item\em validates the plain text. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm_a1b5077d40cae2bb5d71e9a7df94757c4}{\+\_\+validate\+Cipher\+Text}} (self, text)
+\begin{DoxyCompactList}\small\item\em validates the cipher text. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ab69e2900b19527168901b083b4eb4ec4}{\+\_\+encrypt}} (self, key, text)
+\begin{DoxyCompactList}\small\item\em internal encryption function, called by encrypt \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm_af2c4a5b86561ddb3d9465477b83904b5}{\+\_\+decrypt}} (self, key, text)
+\begin{DoxyCompactList}\small\item\em internal decryption function, called by decrypt \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base encryption algorigm class, defines the A\+PI. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1EncryptionAlgorithm_a8916994ba410f389e2cdfd5d77c2d8fa}\label{classEncryptionAlgorithms_1_1EncryptionAlgorithm_a8916994ba410f389e2cdfd5d77c2d8fa}} 
+\index{Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Encryption\+Algorithm.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{alphabet }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alphabet} & string -\/ List of symbols for plaintext and ciphertext\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1EncryptionAlgorithm_af2c4a5b86561ddb3d9465477b83904b5}\label{classEncryptionAlgorithms_1_1EncryptionAlgorithm_af2c4a5b86561ddb3d9465477b83904b5}} 
+\index{Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}!\+\_\+decrypt@{\+\_\+decrypt}}
+\index{\+\_\+decrypt@{\+\_\+decrypt}!Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}}
+\subsubsection{\texorpdfstring{\+\_\+decrypt()}{\_decrypt()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Encryption\+Algorithm.\+\_\+decrypt (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+internal decryption function, called by decrypt 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+decrypted text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ab69e2900b19527168901b083b4eb4ec4}\label{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ab69e2900b19527168901b083b4eb4ec4}} 
+\index{Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}!\+\_\+encrypt@{\+\_\+encrypt}}
+\index{\+\_\+encrypt@{\+\_\+encrypt}!Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}}
+\subsubsection{\texorpdfstring{\+\_\+encrypt()}{\_encrypt()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Encryption\+Algorithm.\+\_\+encrypt (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+internal encryption function, called by encrypt 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+encrypted text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1EncryptionAlgorithm_af3d6de15270153827e6928c5e9fd65be}\label{classEncryptionAlgorithms_1_1EncryptionAlgorithm_af3d6de15270153827e6928c5e9fd65be}} 
+\index{Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}!\+\_\+validate\+Alphabet@{\+\_\+validate\+Alphabet}}
+\index{\+\_\+validate\+Alphabet@{\+\_\+validate\+Alphabet}!Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}}
+\subsubsection{\texorpdfstring{\+\_\+validate\+Alphabet()}{\_validateAlphabet()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Encryption\+Algorithm.\+\_\+validate\+Alphabet (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{alphabet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+internal method for validating the alphabet 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alphabet} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1EncryptionAlgorithm_a1b5077d40cae2bb5d71e9a7df94757c4}\label{classEncryptionAlgorithms_1_1EncryptionAlgorithm_a1b5077d40cae2bb5d71e9a7df94757c4}} 
+\index{Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}!\+\_\+validate\+Cipher\+Text@{\+\_\+validate\+Cipher\+Text}}
+\index{\+\_\+validate\+Cipher\+Text@{\+\_\+validate\+Cipher\+Text}!Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}}
+\subsubsection{\texorpdfstring{\+\_\+validate\+Cipher\+Text()}{\_validateCipherText()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Encryption\+Algorithm.\+\_\+validate\+Cipher\+Text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+validates the cipher text. 
+
+Throws Validation\+Exception
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1EncryptionAlgorithm_af28e6d27846bd1690122b68edb95a486}\label{classEncryptionAlgorithms_1_1EncryptionAlgorithm_af28e6d27846bd1690122b68edb95a486}} 
+\index{Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}!\+\_\+validate\+Key@{\+\_\+validate\+Key}}
+\index{\+\_\+validate\+Key@{\+\_\+validate\+Key}!Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}}
+\subsubsection{\texorpdfstring{\+\_\+validate\+Key()}{\_validateKey()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Encryption\+Algorithm.\+\_\+validate\+Key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Validates the key. 
+
+Throws Validation\+Exception
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1EncryptionAlgorithm_a78d73cf66cbaca8f534bbfd5609a984d}\label{classEncryptionAlgorithms_1_1EncryptionAlgorithm_a78d73cf66cbaca8f534bbfd5609a984d}} 
+\index{Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}!\+\_\+validate\+Plain\+Text@{\+\_\+validate\+Plain\+Text}}
+\index{\+\_\+validate\+Plain\+Text@{\+\_\+validate\+Plain\+Text}!Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}}
+\subsubsection{\texorpdfstring{\+\_\+validate\+Plain\+Text()}{\_validatePlainText()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Encryption\+Algorithm.\+\_\+validate\+Plain\+Text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+validates the plain text. 
+
+Throws Validation\+Exception
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ab0666e938c8fbcce0934f145288397d9}\label{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ab0666e938c8fbcce0934f145288397d9}} 
+\index{Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}}
+\subsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Encryption\+Algorithm.\+decrypt (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+
+
+Decryption function, validates key and ciphertext. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Decrypted text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ac8e6b3a5b536ba2b3ed86f4f635be679}\label{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ac8e6b3a5b536ba2b3ed86f4f635be679}} 
+\index{Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}}
+\subsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Encryption\+Algorithm.\+encrypt (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+
+
+Encryption function, validates key and plaintext. 
+
+Throws Validation\+Exception
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Encrypted text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1EncryptionAlgorithm_af584e5bbf78770ca1d8f8c08c06e0dc2}\label{classEncryptionAlgorithms_1_1EncryptionAlgorithm_af584e5bbf78770ca1d8f8c08c06e0dc2}} 
+\index{Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}!set\+Alphabet@{set\+Alphabet}}
+\index{set\+Alphabet@{set\+Alphabet}!Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}}
+\subsubsection{\texorpdfstring{set\+Alphabet()}{setAlphabet()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Encryption\+Algorithm.\+set\+Alphabet (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{alphabet }\end{DoxyParamCaption})}
+
+
+
+Sets the new alphabet, validates it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alphabet} & -\/ string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ad43b0d5680d18b7bc62848864e496684}\label{classEncryptionAlgorithms_1_1EncryptionAlgorithm_ad43b0d5680d18b7bc62848864e496684}} 
+\index{Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}!alphabet@{alphabet}}
+\index{alphabet@{alphabet}!Encryption\+Algorithms\+::\+Encryption\+Algorithm@{Encryption\+Algorithms\+::\+Encryption\+Algorithm}}
+\subsubsection{\texorpdfstring{alphabet}{alphabet}}
+{\footnotesize\ttfamily Encryption\+Algorithms.\+Encryption\+Algorithm.\+alphabet}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{EncryptionAlgorithms_8py}{Encryption\+Algorithms.\+py}}\end{DoxyCompactItemize}

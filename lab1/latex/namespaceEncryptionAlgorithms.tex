@@ -1,0 +1,113 @@
+\hypertarget{namespaceEncryptionAlgorithms}{}\section{Encryption\+Algorithms Namespace Reference}
+\label{namespaceEncryptionAlgorithms}\index{Encryption\+Algorithms@{Encryption\+Algorithms}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classEncryptionAlgorithms_1_1AffineCipher}{Affine\+Cipher}}
+\item 
+class \mbox{\hyperlink{classEncryptionAlgorithms_1_1BelasoCipher}{Belaso\+Cipher}}
+\item 
+class \mbox{\hyperlink{classEncryptionAlgorithms_1_1CaesarCipher}{Caesar\+Cipher}}
+\begin{DoxyCompactList}\small\item\em Implements the Caesar cipher, has all methods from \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm}{Encryption\+Algorithm}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm}{Encryption\+Algorithm}}
+\begin{DoxyCompactList}\small\item\em Base encryption algorigm class, defines the A\+PI. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classEncryptionAlgorithms_1_1HillCipher}{Hill\+Cipher}}
+\begin{DoxyCompactList}\small\item\em Extends \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm}{Encryption\+Algorithm}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classEncryptionAlgorithms_1_1PermutationCipher}{Permutation\+Cipher}}
+\item 
+class \mbox{\hyperlink{classEncryptionAlgorithms_1_1SubstitutionCipher}{Substitution\+Cipher}}
+\begin{DoxyCompactList}\small\item\em Extends \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm}{Encryption\+Algorithm}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceEncryptionAlgorithms_a579c44082c46469c685af4fa13b7087e}{\+\_\+gcd}} (a, b)
+\begin{DoxyCompactList}\small\item\em Greatest common divisor between two positive integers. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceEncryptionAlgorithms_ac6020cd3bf4adee2c1d7e325d0218630}{gcd}} (a, b)
+\begin{DoxyCompactList}\small\item\em Greatest common divisor between two integer. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceEncryptionAlgorithms_a054a518c18879771f989654ab7e2ae4e}{\+\_\+egcd}} (a, b)
+\begin{DoxyCompactList}\small\item\em Extended greatest common divisor between two positive integers. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceEncryptionAlgorithms_a8202b546cf0698eece91364d04351eac}{egcd}} (a, b)
+\begin{DoxyCompactList}\small\item\em Extended greatest common divisor between two positive integers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceEncryptionAlgorithms_a054a518c18879771f989654ab7e2ae4e}\label{namespaceEncryptionAlgorithms_a054a518c18879771f989654ab7e2ae4e}} 
+\index{Encryption\+Algorithms@{Encryption\+Algorithms}!\+\_\+egcd@{\+\_\+egcd}}
+\index{\+\_\+egcd@{\+\_\+egcd}!Encryption\+Algorithms@{Encryption\+Algorithms}}
+\subsubsection{\texorpdfstring{\+\_\+egcd()}{\_egcd()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+\_\+egcd (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Extended greatest common divisor between two positive integers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & integer \\
+\hline
+{\em b} & integer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A tuple of (d, x, y) where d = gcd(a, b), x and y are coefficients of ax + by = d identity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceEncryptionAlgorithms_a579c44082c46469c685af4fa13b7087e}\label{namespaceEncryptionAlgorithms_a579c44082c46469c685af4fa13b7087e}} 
+\index{Encryption\+Algorithms@{Encryption\+Algorithms}!\+\_\+gcd@{\+\_\+gcd}}
+\index{\+\_\+gcd@{\+\_\+gcd}!Encryption\+Algorithms@{Encryption\+Algorithms}}
+\subsubsection{\texorpdfstring{\+\_\+gcd()}{\_gcd()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+\_\+gcd (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Greatest common divisor between two positive integers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & integer \\
+\hline
+{\em b} & integer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+gcd between a and b 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceEncryptionAlgorithms_a8202b546cf0698eece91364d04351eac}\label{namespaceEncryptionAlgorithms_a8202b546cf0698eece91364d04351eac}} 
+\index{Encryption\+Algorithms@{Encryption\+Algorithms}!egcd@{egcd}}
+\index{egcd@{egcd}!Encryption\+Algorithms@{Encryption\+Algorithms}}
+\subsubsection{\texorpdfstring{egcd()}{egcd()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+egcd (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+
+
+Extended greatest common divisor between two positive integers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & integer \\
+\hline
+{\em b} & integer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A tuple of (d, x, y) where d = gcd(a, b), x and y are coefficients of ax + by = d identity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceEncryptionAlgorithms_ac6020cd3bf4adee2c1d7e325d0218630}\label{namespaceEncryptionAlgorithms_ac6020cd3bf4adee2c1d7e325d0218630}} 
+\index{Encryption\+Algorithms@{Encryption\+Algorithms}!gcd@{gcd}}
+\index{gcd@{gcd}!Encryption\+Algorithms@{Encryption\+Algorithms}}
+\subsubsection{\texorpdfstring{gcd()}{gcd()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+gcd (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+
+
+Greatest common divisor between two integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}

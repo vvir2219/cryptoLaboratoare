@@ -1,0 +1,169 @@
+\hypertarget{classEncryptionAlgorithms_1_1SubstitutionCipher}{}\section{Encryption\+Algorithms.\+Substitution\+Cipher Class Reference}
+\label{classEncryptionAlgorithms_1_1SubstitutionCipher}\index{Encryption\+Algorithms.\+Substitution\+Cipher@{Encryption\+Algorithms.\+Substitution\+Cipher}}
+
+
+Extends \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm}{Encryption\+Algorithm}}.  
+
+
+Inheritance diagram for Encryption\+Algorithms.\+Substitution\+Cipher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEncryptionAlgorithms_1_1SubstitutionCipher}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1SubstitutionCipher_ac8d0e10409c6dd0ac7cbb7bf94f4f2bd}{decrypt}} (self, key, text)
+\begin{DoxyCompactList}\small\item\em Overload on decrypth method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1SubstitutionCipher_a3ec601adf1b00d35706c42afac3d194e}{\+\_\+validate\+Key}} (self, key)
+\begin{DoxyCompactList}\small\item\em validates the key. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1SubstitutionCipher_a0dc91efdbee882c4b1e1fbcb2c6a8709}{\+\_\+validate\+Plain\+Text}} (self, text)
+\begin{DoxyCompactList}\small\item\em validates the plain text. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1SubstitutionCipher_af8725d1344b2f6dd47f1e3303ab049eb}{\+\_\+validate\+Cipher\+Text}} (self, key, text)
+\begin{DoxyCompactList}\small\item\em validates the cipher text. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1SubstitutionCipher_ae877efaf2ea953c760770d92d719517a}{\+\_\+encrypt}} (self, key, text)
+\begin{DoxyCompactList}\small\item\em Internal encryption function. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1SubstitutionCipher_ac7b54cd92d6d1c1cb5a90a9c603d50c1}{\+\_\+decrypt}} (self, key, text)
+\begin{DoxyCompactList}\small\item\em Internal decryption function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Extends \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm}{Encryption\+Algorithm}}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1SubstitutionCipher_ac7b54cd92d6d1c1cb5a90a9c603d50c1}\label{classEncryptionAlgorithms_1_1SubstitutionCipher_ac7b54cd92d6d1c1cb5a90a9c603d50c1}} 
+\index{Encryption\+Algorithms\+::\+Substitution\+Cipher@{Encryption\+Algorithms\+::\+Substitution\+Cipher}!\+\_\+decrypt@{\+\_\+decrypt}}
+\index{\+\_\+decrypt@{\+\_\+decrypt}!Encryption\+Algorithms\+::\+Substitution\+Cipher@{Encryption\+Algorithms\+::\+Substitution\+Cipher}}
+\subsubsection{\texorpdfstring{\+\_\+decrypt()}{\_decrypt()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Substitution\+Cipher.\+\_\+decrypt (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal decryption function. 
+
+Substitutes each character in the ciphertext with the corresponding character in the plaintext.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Decrypted text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1SubstitutionCipher_ae877efaf2ea953c760770d92d719517a}\label{classEncryptionAlgorithms_1_1SubstitutionCipher_ae877efaf2ea953c760770d92d719517a}} 
+\index{Encryption\+Algorithms\+::\+Substitution\+Cipher@{Encryption\+Algorithms\+::\+Substitution\+Cipher}!\+\_\+encrypt@{\+\_\+encrypt}}
+\index{\+\_\+encrypt@{\+\_\+encrypt}!Encryption\+Algorithms\+::\+Substitution\+Cipher@{Encryption\+Algorithms\+::\+Substitution\+Cipher}}
+\subsubsection{\texorpdfstring{\+\_\+encrypt()}{\_encrypt()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Substitution\+Cipher.\+\_\+encrypt (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal encryption function. 
+
+Substitutes each character in the plaintext with the corresponding character in the ciphertext.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Encrypted text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1SubstitutionCipher_af8725d1344b2f6dd47f1e3303ab049eb}\label{classEncryptionAlgorithms_1_1SubstitutionCipher_af8725d1344b2f6dd47f1e3303ab049eb}} 
+\index{Encryption\+Algorithms\+::\+Substitution\+Cipher@{Encryption\+Algorithms\+::\+Substitution\+Cipher}!\+\_\+validate\+Cipher\+Text@{\+\_\+validate\+Cipher\+Text}}
+\index{\+\_\+validate\+Cipher\+Text@{\+\_\+validate\+Cipher\+Text}!Encryption\+Algorithms\+::\+Substitution\+Cipher@{Encryption\+Algorithms\+::\+Substitution\+Cipher}}
+\subsubsection{\texorpdfstring{\+\_\+validate\+Cipher\+Text()}{\_validateCipherText()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Substitution\+Cipher.\+\_\+validate\+Cipher\+Text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+validates the cipher text. 
+
+Throws Validation\+Exception. Ciphertext has to contain only characters from the uppercase(alphabet).
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1SubstitutionCipher_a3ec601adf1b00d35706c42afac3d194e}\label{classEncryptionAlgorithms_1_1SubstitutionCipher_a3ec601adf1b00d35706c42afac3d194e}} 
+\index{Encryption\+Algorithms\+::\+Substitution\+Cipher@{Encryption\+Algorithms\+::\+Substitution\+Cipher}!\+\_\+validate\+Key@{\+\_\+validate\+Key}}
+\index{\+\_\+validate\+Key@{\+\_\+validate\+Key}!Encryption\+Algorithms\+::\+Substitution\+Cipher@{Encryption\+Algorithms\+::\+Substitution\+Cipher}}
+\subsubsection{\texorpdfstring{\+\_\+validate\+Key()}{\_validateKey()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Substitution\+Cipher.\+\_\+validate\+Key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+validates the key. 
+
+Throws Validation\+Exception. Key has to be a string with set properties and equal of length with the alphabet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1SubstitutionCipher_a0dc91efdbee882c4b1e1fbcb2c6a8709}\label{classEncryptionAlgorithms_1_1SubstitutionCipher_a0dc91efdbee882c4b1e1fbcb2c6a8709}} 
+\index{Encryption\+Algorithms\+::\+Substitution\+Cipher@{Encryption\+Algorithms\+::\+Substitution\+Cipher}!\+\_\+validate\+Plain\+Text@{\+\_\+validate\+Plain\+Text}}
+\index{\+\_\+validate\+Plain\+Text@{\+\_\+validate\+Plain\+Text}!Encryption\+Algorithms\+::\+Substitution\+Cipher@{Encryption\+Algorithms\+::\+Substitution\+Cipher}}
+\subsubsection{\texorpdfstring{\+\_\+validate\+Plain\+Text()}{\_validatePlainText()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Substitution\+Cipher.\+\_\+validate\+Plain\+Text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+validates the plain text. 
+
+Throws Validation\+Exception. Plaintext has to contain only characters from the alphabet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1SubstitutionCipher_ac8d0e10409c6dd0ac7cbb7bf94f4f2bd}\label{classEncryptionAlgorithms_1_1SubstitutionCipher_ac8d0e10409c6dd0ac7cbb7bf94f4f2bd}} 
+\index{Encryption\+Algorithms\+::\+Substitution\+Cipher@{Encryption\+Algorithms\+::\+Substitution\+Cipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Encryption\+Algorithms\+::\+Substitution\+Cipher@{Encryption\+Algorithms\+::\+Substitution\+Cipher}}
+\subsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Substitution\+Cipher.\+decrypt (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+
+
+Overload on decrypth method. 
+
+Overload needed because ciphertext validation has to include the key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Decrypted text 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{EncryptionAlgorithms_8py}{Encryption\+Algorithms.\+py}}\end{DoxyCompactItemize}

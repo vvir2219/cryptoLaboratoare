@@ -1,0 +1,142 @@
+\hypertarget{classEncryptionAlgorithms_1_1CaesarCipher}{}\section{Encryption\+Algorithms.\+Caesar\+Cipher Class Reference}
+\label{classEncryptionAlgorithms_1_1CaesarCipher}\index{Encryption\+Algorithms.\+Caesar\+Cipher@{Encryption\+Algorithms.\+Caesar\+Cipher}}
+
+
+Implements the Caesar cipher, has all methods from \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm}{Encryption\+Algorithm}}.  
+
+
+Inheritance diagram for Encryption\+Algorithms.\+Caesar\+Cipher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEncryptionAlgorithms_1_1CaesarCipher}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1CaesarCipher_af790e8acc754ab66e19652aaf003ef45}{\+\_\+validate\+Key}} (self, key)
+\begin{DoxyCompactList}\small\item\em validates the key. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1CaesarCipher_a6fe0acdce6b92624ba362c1b14a06e2b}{\+\_\+validate\+Plain\+Text}} (self, text)
+\begin{DoxyCompactList}\small\item\em validates the plain text. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1CaesarCipher_a55a7fb968fe4d734b8692271bba17c6b}{\+\_\+validate\+Cipher\+Text}} (self, text)
+\begin{DoxyCompactList}\small\item\em validates the cipher text. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1CaesarCipher_aa9613b0dd8ed0a3331a12ce3b607940b}{\+\_\+encrypt}} (self, key, text)
+\begin{DoxyCompactList}\small\item\em Internal encryption function. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classEncryptionAlgorithms_1_1CaesarCipher_a26694e19444bbcb58987f24205cdbce7}{\+\_\+decrypt}} (self, key, text)
+\begin{DoxyCompactList}\small\item\em Internal decryption function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implements the Caesar cipher, has all methods from \mbox{\hyperlink{classEncryptionAlgorithms_1_1EncryptionAlgorithm}{Encryption\+Algorithm}}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1CaesarCipher_a26694e19444bbcb58987f24205cdbce7}\label{classEncryptionAlgorithms_1_1CaesarCipher_a26694e19444bbcb58987f24205cdbce7}} 
+\index{Encryption\+Algorithms\+::\+Caesar\+Cipher@{Encryption\+Algorithms\+::\+Caesar\+Cipher}!\+\_\+decrypt@{\+\_\+decrypt}}
+\index{\+\_\+decrypt@{\+\_\+decrypt}!Encryption\+Algorithms\+::\+Caesar\+Cipher@{Encryption\+Algorithms\+::\+Caesar\+Cipher}}
+\subsubsection{\texorpdfstring{\+\_\+decrypt()}{\_decrypt()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Caesar\+Cipher.\+\_\+decrypt (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal decryption function. 
+
+Encrypth with -\/key
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1CaesarCipher_aa9613b0dd8ed0a3331a12ce3b607940b}\label{classEncryptionAlgorithms_1_1CaesarCipher_aa9613b0dd8ed0a3331a12ce3b607940b}} 
+\index{Encryption\+Algorithms\+::\+Caesar\+Cipher@{Encryption\+Algorithms\+::\+Caesar\+Cipher}!\+\_\+encrypt@{\+\_\+encrypt}}
+\index{\+\_\+encrypt@{\+\_\+encrypt}!Encryption\+Algorithms\+::\+Caesar\+Cipher@{Encryption\+Algorithms\+::\+Caesar\+Cipher}}
+\subsubsection{\texorpdfstring{\+\_\+encrypt()}{\_encrypt()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Caesar\+Cipher.\+\_\+encrypt (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Internal encryption function. 
+
+Shifts each character from the plaintext by \textquotesingle{}key\textquotesingle{} ammount of characters in the alphabet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1CaesarCipher_a55a7fb968fe4d734b8692271bba17c6b}\label{classEncryptionAlgorithms_1_1CaesarCipher_a55a7fb968fe4d734b8692271bba17c6b}} 
+\index{Encryption\+Algorithms\+::\+Caesar\+Cipher@{Encryption\+Algorithms\+::\+Caesar\+Cipher}!\+\_\+validate\+Cipher\+Text@{\+\_\+validate\+Cipher\+Text}}
+\index{\+\_\+validate\+Cipher\+Text@{\+\_\+validate\+Cipher\+Text}!Encryption\+Algorithms\+::\+Caesar\+Cipher@{Encryption\+Algorithms\+::\+Caesar\+Cipher}}
+\subsubsection{\texorpdfstring{\+\_\+validate\+Cipher\+Text()}{\_validateCipherText()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Caesar\+Cipher.\+\_\+validate\+Cipher\+Text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+validates the cipher text. 
+
+Throws Validation\+Exception. Ciphertext has to contain only characters from the uppercase(alphabet).
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1CaesarCipher_af790e8acc754ab66e19652aaf003ef45}\label{classEncryptionAlgorithms_1_1CaesarCipher_af790e8acc754ab66e19652aaf003ef45}} 
+\index{Encryption\+Algorithms\+::\+Caesar\+Cipher@{Encryption\+Algorithms\+::\+Caesar\+Cipher}!\+\_\+validate\+Key@{\+\_\+validate\+Key}}
+\index{\+\_\+validate\+Key@{\+\_\+validate\+Key}!Encryption\+Algorithms\+::\+Caesar\+Cipher@{Encryption\+Algorithms\+::\+Caesar\+Cipher}}
+\subsubsection{\texorpdfstring{\+\_\+validate\+Key()}{\_validateKey()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Caesar\+Cipher.\+\_\+validate\+Key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+validates the key. 
+
+Throws Validation\+Exception. Key has to be an integer between 0 and alphabet length.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEncryptionAlgorithms_1_1CaesarCipher_a6fe0acdce6b92624ba362c1b14a06e2b}\label{classEncryptionAlgorithms_1_1CaesarCipher_a6fe0acdce6b92624ba362c1b14a06e2b}} 
+\index{Encryption\+Algorithms\+::\+Caesar\+Cipher@{Encryption\+Algorithms\+::\+Caesar\+Cipher}!\+\_\+validate\+Plain\+Text@{\+\_\+validate\+Plain\+Text}}
+\index{\+\_\+validate\+Plain\+Text@{\+\_\+validate\+Plain\+Text}!Encryption\+Algorithms\+::\+Caesar\+Cipher@{Encryption\+Algorithms\+::\+Caesar\+Cipher}}
+\subsubsection{\texorpdfstring{\+\_\+validate\+Plain\+Text()}{\_validatePlainText()}}
+{\footnotesize\ttfamily def Encryption\+Algorithms.\+Caesar\+Cipher.\+\_\+validate\+Plain\+Text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+validates the plain text. 
+
+Throws Validation\+Exception. Plaintext has to contain only characters from the alphabet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{EncryptionAlgorithms_8py}{Encryption\+Algorithms.\+py}}\end{DoxyCompactItemize}
