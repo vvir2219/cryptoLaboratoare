@@ -1,0 +1,286 @@
+#!/bin/python2
+
+import random
+import argparse
+import json
+
+g_verbose = False
+g_verbose_indent = ''
+g_indent_tab = [4]
+
+def print_verbose(message, end = "\n"):
+    global g_verbose
+    if g_verbose:
+        print g_verbose_indent + message + end,
+
+def indent_verbose(amount):
+    global g_verbose_indent
+    g_verbose_indent += ' '*amount
+
+def dedent_verbose(amount):
+    global g_verbose_indent
+    g_verbose_indent = g_verbose_indent[:-amount]
+
+def indented(amount):
+    def _indented_decorator(func):
+        def wrapper(*args, **kwargs):
+            indent_verbose(amount[0])
+            ret_value = func(*args, **kwargs)
+            dedent_verbose(amount[0])
+            return ret_value
+        return wrapper
+    return _indented_decorator
+
+random.seed();
+
+##
+# @brief Greatest common divisor between two positive integers
+#
+# @param a integer
+# @param b integer
+#
+# @return gcd between a and b
+@indented(g_indent_tab)
+def _gcd(a, b):
+    if b == 0:
+        print_verbose("a = {}".format(a))
+
+        return a
+    if g_verbose:
+        print_verbose("a = {}\tb = {}".format(a, b))
+
+    return _gcd(b, a % b)
+
+@indented(g_indent_tab)
+def _gcd(a, b):
+    print_verbose("gcd({}, {}) = ".format(a, b), end="")
+    while b != 0:
+        print_verbose("gcd({1}, {0} % {1}) =".format(a, b))
+        print_verbose("gcd({}, {}) = ".format(b, a%b), end="")
+
+        a, b = b, a % b
+    print_verbose("{}".format(a))
+    return a
+
+##
+# @brief Greatest common divisor between two integer
+#
+# @param a
+# @param b
+#
+# @return 
+def gcd(a, b):
+    return _gcd(abs(a), abs(b))
+
+##
+# @brief Extended greatest common divisor between two positive integers
+#
+# @param a integer
+# @param b integer
+#
+# @return A tuple of (d, x, y)
+# where d = gcd(a, b), x and y are coefficients of ax + by = d identity
+@indented(g_indent_tab)
+def _egcd(a, b):
+    if b == 0:
+        print_verbose("d = {}\tx = 1\ty =0".format(a))
+
+        return (a, 1, 0)
+    d, x0, y0 = _egcd(b, a % b)
+    print_verbose("d = "+str(d)+"\tx = " +str(y0)+"\ty = "+str(x0-(a//b)*y0));
+
+    return (d, y0, x0 - (a//b)*y0)
+@indented(g_indent_tab)
+def _egcd(a, b):
+    print_verbose("Extended euclidean algorithm")
+    print_verbose("Solves the equation {0}*x + {1}*y = gcd({0}, {1})".format(a, b))
+    print_verbose("q = cat")
+    print_verbose("r = rest")
+    print_verbose("x = coeficientul lui a")
+    print_verbose("y = coeficientul lui b")
+    s, _s = 0, 1
+    t, _t = 1, 0
+    r, _r = b, a
+    print_verbose("q = 0\tr = {}\tx = {}\ty = {}".format(_r, _s, _t))
+    while r != 0:
+        q = _r // r
+        _r, r = r, _r - q*r
+        _s, s = s, _s - q*s
+        _t, t = t, _t - q*t
+        print_verbose("q = {}\tr = {}\tx = {}\ty = {}".format(q, _r, _s, _t))
+
+    return (_r, _s, _t)
+
+
+##
+# @brief Extended greatest common divisor between two positive integers
+#
+# @param a integer
+# @param b integer
+#
+# @return A tuple of (d, x, y)
+# where d = gcd(a, b), x and y are coefficients of ax + by = d identity
+def egcd(a, b):
+    return _egcd(abs(a), abs(b));
+
+##
+# @brief Modular inverse of b in Zn
+#
+# @param a - integer
+# @param n - integer, modulo n
+#
+# @return modular inverse : a^-1 mod n
+@indented(g_indent_tab)
+def inv_mod(a, n):
+    print_verbose("Modular inverse of {} in Z({})".format(a, n))
+    print_verbose("Extended gcd:")
+    d, x, y = egcd(a, n);
+    if d != 1:
+        print_verbose("Gcd is not 1, modular inverse does not exist")
+        raise ValueError(str(a) + " does not have modular inverse in Z(" + str(n)+")");
+
+    print_verbose("Modular inverse: {}".format((x%n+n)%n))
+    return (x % n + n) % n
+
+##
+# @brief computes b^e mod n
+#
+# @param b
+# @param e
+# @param n
+#
+# @return 
+@indented(g_indent_tab)
+def exp_mod(b, e, n):
+    print_verbose("Exponentiation by squaring\n")
+    print_verbose("{}^{} mod {} = ?".format(b, e, n))
+    if e < 0:
+        print_verbose(" = ({}^(-1))^{} mod {} = ".format(b, -e, n))
+
+        b = inv_mod(b, n)
+        e = -e
+        print_verbose(" = {}^{} mod {} = ".format(b, e, n))
+    y = 1
+    while e > 1:
+        if e % 2 == 1:
+            y = b * y
+            y %= n
+        print_verbose(" = ({0} * {1}^{2} * {1}^{2}) mod {3} = ".format(y, b, e//2, n))
+        b *= b
+        print_verbose(" = ({0} * {1}^{2}) mod {3} = ".format(y, b, e//2, n))
+        b %= n
+        e //= 2
+        print_verbose(" = ({0} * {1}^{2}) mod {3} = ".format(y, b, e, n))
+    print_verbose(str((b * y) % n))
+    return (b * y) % n
+
+##
+# @brief incearca daca numaru ii compus relativ cu withness-u a
+#
+# @param a - whitness
+# @param d - 
+# @param n - (n-1) = (2^s)*d
+# @param s - 
+#
+# @return 
+@indented(g_indent_tab)
+def _try_composite(a, d, n, s):
+    print_verbose("Trying pseudoprimality of {} with {}.".format(n, d))
+    print_verbose("")
+
+    print_verbose("Calculate {}^{} mod {}".format(a, d, n))
+    x = exp_mod(a, d, n)
+    print_verbose("{}^{} mod {} = {}".format(a, d, n, x))
+    if (x == 1) or (x == n-1):
+        print_verbose("{} is pseudoprime with {}".format(n, a))
+        return False
+    for i in xrange(s):
+        x = (x*x) % n
+        print_verbose("{}^({} * 2^{}) mod {} = {}".format(a, d, i, n, x))
+        if x == n - 1:
+            print_verbose("{} is pseudoprime with {}".format(n, a))
+            return False
+    print_verbose("{} is composite".format(n))
+    return True
+
+@indented(g_indent_tab)
+def is_prime(n, sure, _precision_for_huge_n=16):
+    print_verbose("Miller-rabin:")
+    if sure:
+        if n in _known_primes or n in (0, 1):
+            print_verbose("{} is a small prime, no test needed".format(n))
+            return True
+        if any((n % p) == 0 for p in _known_primes):
+            print_verbose("{} is divisible by small primes, no test needed".format(n))
+            return False
+    d, s = n - 1, 0
+    while not d % 2:
+        d, s = d >> 1, s + 1
+    print_verbose("{} = {} * 2^{}".format(n, d, s))
+    if sure:
+        # Returns exact according to http://primes.utm.edu/prove/prove2_3.html
+        if n < 1373653:
+            return not any(_try_composite(a, d, n, s) for a in (2, 3))
+        if n < 25326001:
+            return not any(_try_composite(a, d, n, s) for a in (2, 3, 5))
+        if n < 118670087467:
+            if n == 3215031751:
+                return False
+            return not any(_try_composite(a, d, n, s) for a in (2, 3, 5, 7))
+        if n < 2152302898747:
+            return not any(_try_composite(a, d, n, s) for a in (2, 3, 5, 7, 11))
+        if n < 3474749660383:
+            return not any(_try_composite(a, d, n, s) for a in (2, 3, 5, 7, 11, 13))
+        if n < 341550071728321:
+            return not any(_try_composite(a, d, n, s) for a in (2, 3, 5, 7, 11, 13, 17))
+    # otherwise
+    return not any(_try_composite(a, d, n, s)
+                   for a in _known_primes[:_precision_for_huge_n])
+
+_known_primes = [2, 3]
+_known_primes += [x for x in range(5, 1000, 2) if is_prime(x, True)]
+
+def is_prime2(n, sure, _precision_for_huge_n=16):
+    print_verbose("Primality test for {}".format(n))
+    if (is_prime(n, sure, _precision_for_huge_n)):
+        print_verbose("With a very high probability {} is prime".format(n))
+        return True
+    print_verbose("{} is surely composite".format(n))
+    return False
+
+def main():
+    global g_verbose
+    global g_indent_tab
+
+    parser = argparse.ArgumentParser(description="Miller-rabin primality test")
+    parser.add_argument('-v', '--verbose', action='store_true', default=False,
+            dest='verbose', help='Makes output verbose')
+    parser.add_argument('-i', '--indent', action='store', default=4, type=int,
+            dest='indent', help='Indentation of verbosity in function call')
+    parser.add_argument('-p', '--probabilistic', action='store_true', default=False,
+            dest='probabilistic', help='Tests are by default made with witnesses\
+            certified to make sure the probability of the number beeing prime is\
+            1, with probabilistic enabled, it will take the first n primes to\
+            check for witnesses (n can be given as parameter, default is 7,\
+            which is not too bad)')
+
+    parser.add_argument('number', type=int, help='The number on which the test of primality is run')
+    parser.add_argument('prime_witnesses', type=int, nargs='?',
+            default=7, help='The number of prime witnesses for which is tested\
+            the number in case it\'s bigger than 341550071728321 or\
+            --probabilistic is turned on')
+
+    args = parser.parse_args()
+
+    g_verbose = args.verbose
+    g_indent_tab[0] = args.indent
+    try:
+        if is_prime2(args.number, not args.probabilistic, args.prime_witnesses):
+            print("{} is prime by this test.".format(args.number))
+        else:
+            print("{} is composite".format(args.number))
+    except ValueError as e:
+        print e
+
+if __name__ == "__main__":
+    main()

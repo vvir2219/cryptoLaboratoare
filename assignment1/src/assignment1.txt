@@ -1,0 +1,296 @@
+Generate key for RSA with primes between 50 and 150
+    Generate random prime between 50 and 150
+    Random number = 92
+    Test primality of 92
+        Miller-rabin:
+        92 is divisible by small primes, no test needed
+    Another random number = 103
+    Test primality of 103
+        Miller-rabin:
+        103 is a small prime, no test needed
+    103 is prime, return it
+    Generate random prime between 50 and 150
+    Random number = 140
+    Test primality of 140
+        Miller-rabin:
+        140 is divisible by small primes, no test needed
+    Another random number = 67
+    Test primality of 67
+        Miller-rabin:
+        67 is a small prime, no test needed
+    67 is prime, return it
+6901 = 103*67
+phi(6901) = (103 - 1) * (67 - 1)
+phi(6901) = 6732
+Generate random coprime to 6732 between 2 and 6732
+    Generate coprime with 6732 between 2 and 6732
+    Random number = 4998
+    Test gcd(4998, 6732)
+        gcd(4998, 6732) =          gcd(6732, 4998 % 6732) = 
+        gcd(6732, 4998) =          gcd(4998, 6732 % 4998) = 
+        gcd(4998, 1734) =          gcd(1734, 4998 % 1734) = 
+        gcd(1734, 1530) =          gcd(1530, 1734 % 1530) = 
+        gcd(1530, 204) =          gcd(204, 1530 % 204) = 
+        gcd(204, 102) =          gcd(102, 204 % 102) = 
+        gcd(102, 0) =          102
+    4998 is not coprime with 6732
+    Another random number = 3432
+    Test gcd(3432, 6732)
+        gcd(3432, 6732) =          gcd(6732, 3432 % 6732) = 
+        gcd(6732, 3432) =          gcd(3432, 6732 % 3432) = 
+        gcd(3432, 3300) =          gcd(3300, 3432 % 3300) = 
+        gcd(3300, 132) =          gcd(132, 3300 % 132) = 
+        gcd(132, 0) =          132
+    3432 is not coprime with 6732
+    Another random number = 4451
+    Test gcd(4451, 6732)
+        gcd(4451, 6732) =          gcd(6732, 4451 % 6732) = 
+        gcd(6732, 4451) =          gcd(4451, 6732 % 4451) = 
+        gcd(4451, 2281) =          gcd(2281, 4451 % 2281) = 
+        gcd(2281, 2170) =          gcd(2170, 2281 % 2170) = 
+        gcd(2170, 111) =          gcd(111, 2170 % 111) = 
+        gcd(111, 61) =          gcd(61, 111 % 61) = 
+        gcd(61, 50) =          gcd(50, 61 % 50) = 
+        gcd(50, 11) =          gcd(11, 50 % 11) = 
+        gcd(11, 6) =          gcd(6, 11 % 6) = 
+        gcd(6, 5) =          gcd(5, 6 % 5) = 
+        gcd(5, 1) =          gcd(1, 5 % 1) = 
+        gcd(1, 0) =          1
+    4451 is coprime with 6732
+Compute the modular inverse between 4451 and 6732
+    Modular inverse of 4451 in Z6732
+        Extended gcd:
+        solves the equation: 4451*x + 6732*y = gcd(4451, 6732) 
+        q = cat
+        r = rest
+        x = coeficientul lui a
+        y = coeficientul lui b
+        q = 0	r = 4451	x = 1	y = 0
+        q = 0	r = 6732	x = 0	y = 1
+        q = 1	r = 4451	x = 1	y = 0
+        q = 1	r = 2281	x = -1	y = 1
+        q = 1	r = 2170	x = 2	y = -1
+        q = 19	r = 111	x = -3	y = 2
+        q = 1	r = 61	x = 59	y = -39
+        q = 1	r = 50	x = -62	y = 41
+        q = 4	r = 11	x = 121	y = -80
+        q = 1	r = 6	x = -546	y = 361
+        q = 1	r = 5	x = 667	y = -441
+        q = 5	r = 1	x = -1213	y = 802
+    Modular inverse: 5519
+Encryption key: (6901, 4451)
+Decryption key: (6901, 5519)
+RSA encryption
+    
+    Key: 6901
+    Exponent: 4451
+    k = 2
+    l = 3
+    text = "vitc"
+    alphabet = " abcdefghijklmnopqrstuvwyz"
+Text by blocks: ['vi', 'tc']
+Now for each block compute it's numerical equivalent
+    Numerical equivalent of "vi" in the alphabet:  abcdefghijklmnopqrstuvwyz
+    iv = i*26^0 + v*26^1 = 
+    9*26^0 + 22*26^1 = 581
+    Numerical equivalent of "tc" in the alphabet:  abcdefghijklmnopqrstuvwyz
+    ct = c*26^0 + t*26^1 = 
+    3*26^0 + 20*26^1 = 523
+Numerical equivalents: [581, 523]
+For each block value v, compute v^4451 mod 6901
+    581^4451	( mod 6901) = 
+    581 * 581^2225 * 581^2225	( mod 6901) = 
+    581 * 337561^2225	( mod 6901) = 
+    581 * 6313^2225	( mod 6901) = 
+    3422 * 6313^1112 * 6313^1112	( mod 6901) = 
+    3422 * 39853969^1112	( mod 6901) = 
+    3422 * 694^1112	( mod 6901) = 
+    3422 * 694^556 * 694^556	( mod 6901) = 
+    3422 * 481636^556	( mod 6901) = 
+    3422 * 5467^556	( mod 6901) = 
+    3422 * 5467^278 * 5467^278	( mod 6901) = 
+    3422 * 29888089^278	( mod 6901) = 
+    3422 * 6759^278	( mod 6901) = 
+    3422 * 6759^139 * 6759^139	( mod 6901) = 
+    3422 * 45684081^139	( mod 6901) = 
+    3422 * 6362^139	( mod 6901) = 
+    5010 * 6362^69 * 6362^69	( mod 6901) = 
+    5010 * 40475044^69	( mod 6901) = 
+    5010 * 679^69	( mod 6901) = 
+    6498 * 679^34 * 679^34	( mod 6901) = 
+    6498 * 461041^34	( mod 6901) = 
+    6498 * 5575^34	( mod 6901) = 
+    6498 * 5575^17 * 5575^17	( mod 6901) = 
+    6498 * 31080625^17	( mod 6901) = 
+    6498 * 5422^17	( mod 6901) = 
+    2551 * 5422^8 * 5422^8	( mod 6901) = 
+    2551 * 29398084^8	( mod 6901) = 
+    2551 * 6725^8	( mod 6901) = 
+    2551 * 6725^4 * 6725^4	( mod 6901) = 
+    2551 * 45225625^4	( mod 6901) = 
+    2551 * 3372^4	( mod 6901) = 
+    2551 * 3372^2 * 3372^2	( mod 6901) = 
+    2551 * 11370384^2	( mod 6901) = 
+    2551 * 4437^2	( mod 6901) = 
+    2551 * 4437^1 * 4437^1	( mod 6901) = 
+    2551 * 19686969^1	( mod 6901) = 
+    2551 * 5317^1	( mod 6901) = 
+    3202
+    523^4451	( mod 6901) = 
+    523 * 523^2225 * 523^2225	( mod 6901) = 
+    523 * 273529^2225	( mod 6901) = 
+    523 * 4390^2225	( mod 6901) = 
+    4838 * 4390^1112 * 4390^1112	( mod 6901) = 
+    4838 * 19272100^1112	( mod 6901) = 
+    4838 * 4508^1112	( mod 6901) = 
+    4838 * 4508^556 * 4508^556	( mod 6901) = 
+    4838 * 20322064^556	( mod 6901) = 
+    4838 * 5520^556	( mod 6901) = 
+    4838 * 5520^278 * 5520^278	( mod 6901) = 
+    4838 * 30470400^278	( mod 6901) = 
+    4838 * 2485^278	( mod 6901) = 
+    4838 * 2485^139 * 2485^139	( mod 6901) = 
+    4838 * 6175225^139	( mod 6901) = 
+    4838 * 5731^139	( mod 6901) = 
+    5261 * 5731^69 * 5731^69	( mod 6901) = 
+    5261 * 32844361^69	( mod 6901) = 
+    5261 * 2502^69	( mod 6901) = 
+    2815 * 2502^34 * 2502^34	( mod 6901) = 
+    2815 * 6260004^34	( mod 6901) = 
+    2815 * 797^34	( mod 6901) = 
+    2815 * 797^17 * 797^17	( mod 6901) = 
+    2815 * 635209^17	( mod 6901) = 
+    2815 * 317^17	( mod 6901) = 
+    2126 * 317^8 * 317^8	( mod 6901) = 
+    2126 * 100489^8	( mod 6901) = 
+    2126 * 3875^8	( mod 6901) = 
+    2126 * 3875^4 * 3875^4	( mod 6901) = 
+    2126 * 15015625^4	( mod 6901) = 
+    2126 * 5950^4	( mod 6901) = 
+    2126 * 5950^2 * 5950^2	( mod 6901) = 
+    2126 * 35402500^2	( mod 6901) = 
+    2126 * 370^2	( mod 6901) = 
+    2126 * 370^1 * 370^1	( mod 6901) = 
+    2126 * 136900^1	( mod 6901) = 
+    2126 * 5781^1	( mod 6901) = 
+    6626
+Encrypted blocks: [3202, 6626]
+Compute the literal equivalents for each chunk and pad them to length 3
+    Literal equivalent of 3202 in the alphabet:  abcdefghijklmnopqrstuvwyz
+    3202 mod 26 = 4 = "d"
+    123 mod 26 = 19 = "s"
+    4 mod 26 = 4 = "d"
+    3202 = dsd
+    Literal equivalent of 6626 in the alphabet:  abcdefghijklmnopqrstuvwyz
+    6626 mod 26 = 22 = "v"
+    254 mod 26 = 20 = "t"
+    9 mod 26 = 9 = "i"
+    6626 = itv
+Encrypted literal blocks: ['dsd', 'itv']
+Encrypted value: dsditv
+RSA encryption
+    
+    Key: 6901
+    Exponent: 5519
+    k = 3
+    l = 2
+    text = "dsditv"
+    alphabet = " abcdefghijklmnopqrstuvwyz"
+Text by blocks: ['dsd', 'itv']
+Now for each block compute it's numerical equivalent
+    Numerical equivalent of "dsd" in the alphabet:  abcdefghijklmnopqrstuvwyz
+    dsd = d*26^0 + s*26^1 + d*26^2 = 
+    4*26^0 + 19*26^1 + 4*26^2 = 3202
+    Numerical equivalent of "itv" in the alphabet:  abcdefghijklmnopqrstuvwyz
+    vti = v*26^0 + t*26^1 + i*26^2 = 
+    22*26^0 + 20*26^1 + 9*26^2 = 6626
+Numerical equivalents: [3202, 6626]
+For each block value v, compute v^5519 mod 6901
+    3202^5519	( mod 6901) = 
+    3202 * 3202^2759 * 3202^2759	( mod 6901) = 
+    3202 * 10252804^2759	( mod 6901) = 
+    3202 * 4819^2759	( mod 6901) = 
+    6703 * 4819^1379 * 4819^1379	( mod 6901) = 
+    6703 * 23222761^1379	( mod 6901) = 
+    6703 * 896^1379	( mod 6901) = 
+    2018 * 896^689 * 896^689	( mod 6901) = 
+    2018 * 802816^689	( mod 6901) = 
+    2018 * 2300^689	( mod 6901) = 
+    3928 * 2300^344 * 2300^344	( mod 6901) = 
+    3928 * 5290000^344	( mod 6901) = 
+    3928 * 3834^344	( mod 6901) = 
+    3928 * 3834^172 * 3834^172	( mod 6901) = 
+    3928 * 14699556^172	( mod 6901) = 
+    3928 * 426^172	( mod 6901) = 
+    3928 * 426^86 * 426^86	( mod 6901) = 
+    3928 * 181476^86	( mod 6901) = 
+    3928 * 2050^86	( mod 6901) = 
+    3928 * 2050^43 * 2050^43	( mod 6901) = 
+    3928 * 4202500^43	( mod 6901) = 
+    3928 * 6692^43	( mod 6901) = 
+    267 * 6692^21 * 6692^21	( mod 6901) = 
+    267 * 44782864^21	( mod 6901) = 
+    267 * 2275^21	( mod 6901) = 
+    137 * 2275^10 * 2275^10	( mod 6901) = 
+    137 * 5175625^10	( mod 6901) = 
+    137 * 6776^10	( mod 6901) = 
+    137 * 6776^5 * 6776^5	( mod 6901) = 
+    137 * 45914176^5	( mod 6901) = 
+    137 * 1823^5	( mod 6901) = 
+    1315 * 1823^2 * 1823^2	( mod 6901) = 
+    1315 * 3323329^2	( mod 6901) = 
+    1315 * 3948^2	( mod 6901) = 
+    1315 * 3948^1 * 3948^1	( mod 6901) = 
+    1315 * 15586704^1	( mod 6901) = 
+    1315 * 4246^1	( mod 6901) = 
+    581
+    6626^5519	( mod 6901) = 
+    6626 * 6626^2759 * 6626^2759	( mod 6901) = 
+    6626 * 43903876^2759	( mod 6901) = 
+    6626 * 6615^2759	( mod 6901) = 
+    2739 * 6615^1379 * 6615^1379	( mod 6901) = 
+    2739 * 43758225^1379	( mod 6901) = 
+    2739 * 5885^1379	( mod 6901) = 
+    5180 * 5885^689 * 5885^689	( mod 6901) = 
+    5180 * 34633225^689	( mod 6901) = 
+    5180 * 4007^689	( mod 6901) = 
+    4953 * 4007^344 * 4007^344	( mod 6901) = 
+    4953 * 16056049^344	( mod 6901) = 
+    4953 * 4323^344	( mod 6901) = 
+    4953 * 4323^172 * 4323^172	( mod 6901) = 
+    4953 * 18688329^172	( mod 6901) = 
+    4953 * 421^172	( mod 6901) = 
+    4953 * 421^86 * 421^86	( mod 6901) = 
+    4953 * 177241^86	( mod 6901) = 
+    4953 * 4716^86	( mod 6901) = 
+    4953 * 4716^43 * 4716^43	( mod 6901) = 
+    4953 * 22240656^43	( mod 6901) = 
+    4953 * 5634^43	( mod 6901) = 
+    4459 * 5634^21 * 5634^21	( mod 6901) = 
+    4459 * 31741956^21	( mod 6901) = 
+    4459 * 4257^21	( mod 6901) = 
+    4213 * 4257^10 * 4257^10	( mod 6901) = 
+    4213 * 18122049^10	( mod 6901) = 
+    4213 * 23^10	( mod 6901) = 
+    4213 * 23^5 * 23^5	( mod 6901) = 
+    4213 * 529^5	( mod 6901) = 
+    4213 * 529^5	( mod 6901) = 
+    6555 * 529^2 * 529^2	( mod 6901) = 
+    6555 * 279841^2	( mod 6901) = 
+    6555 * 3801^2	( mod 6901) = 
+    6555 * 3801^1 * 3801^1	( mod 6901) = 
+    6555 * 14447601^1	( mod 6901) = 
+    6555 * 3808^1	( mod 6901) = 
+    523
+Encrypted blocks: [581, 523]
+Compute the literal equivalents for each chunk and pad them to length 2
+    Literal equivalent of 581 in the alphabet:  abcdefghijklmnopqrstuvwyz
+    581 mod 26 = 9 = "i"
+    22 mod 26 = 22 = "v"
+    581 = vi
+    Literal equivalent of 523 in the alphabet:  abcdefghijklmnopqrstuvwyz
+    523 mod 26 = 3 = "c"
+    20 mod 26 = 20 = "t"
+    523 = tc
+Encrypted literal blocks: ['vi', 'tc']
+Encrypted value: vitc
