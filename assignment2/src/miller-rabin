@@ -185,21 +185,28 @@ def exp_mod(b, e, n):
 # @return 
 @indented(g_indent_tab)
 def _try_composite(a, d, n, s):
-    print_verbose("Trying pseudoprimality of {} with {}.".format(n, d))
+    print_verbose("Trying pseudoprimality of {} with {}.".format(n, a))
     print_verbose("")
 
     print_verbose("Calculate {}^{} mod {}".format(a, d, n))
     x = exp_mod(a, d, n)
     print_verbose("{}^{} mod {} = {}".format(a, d, n, x))
+    print_verbose("Testing if {} is equal to {} or {}".format(x, 1, n-1))
     if (x == 1) or (x == n-1):
         print_verbose("{} is pseudoprime with {}".format(n, a))
         return False
+    print_verbose("{0} != {1} and {0} != {2}".format(x, 1, n-1))
+    print_verbose("This does not verify the pseudoprimality")
+    print_verbose("Testing {}^({}*2^i) mod {} = {}, for each i in 1..{}".format(a, d, n, n - 1, s))
     for i in xrange(s):
         x = (x*x) % n
-        print_verbose("{}^({} * 2^{}) mod {} = {}".format(a, d, i, n, x))
+        if (x != n-1):
+            print_verbose("{})\t{}^({} * 2^{}) mod {} = {} != {}".format(i, a, d, i, n, x, n-1)) 
         if x == n - 1:
+            print_verbose("{})\t{}^({} * 2^{}) mod {} = {} == {}".format(i, a, d, i, n, x, n-1)) 
             print_verbose("{} is pseudoprime with {}".format(n, a))
             return False
+    print_verbose("None of the previous equalities verify the pseudoprimality")
     print_verbose("{} is composite".format(n))
     return True
 
@@ -216,7 +223,7 @@ def is_prime(n, sure, _precision_for_huge_n=16):
     d, s = n - 1, 0
     while not d % 2:
         d, s = d >> 1, s + 1
-    print_verbose("{} = {} * 2^{}".format(n, d, s))
+    print_verbose("{} - 1 = {} * 2^{}".format(n, d, s))
     if sure:
         # Returns exact according to http://primes.utm.edu/prove/prove2_3.html
         if n < 1373653:

@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/f9b184d0/
+_egcd	miller-rabin	/^def _egcd(a, b):$/;"	f
+_gcd	miller-rabin	/^def _gcd(a, b):$/;"	f
+_indented_decorator	miller-rabin	/^    def _indented_decorator(func):$/;"	f	function:indented	file:
+_known_primes	miller-rabin	/^_known_primes = [2, 3]$/;"	v
+_try_composite	miller-rabin	/^def _try_composite(a, d, n, s):$/;"	f
+dedent_verbose	miller-rabin	/^def dedent_verbose(amount):$/;"	f
+egcd	miller-rabin	/^def egcd(a, b):$/;"	f
+exp_mod	miller-rabin	/^def exp_mod(b, e, n):$/;"	f
+g_indent_tab	miller-rabin	/^g_indent_tab = [4]$/;"	v
+g_verbose	miller-rabin	/^g_verbose = False$/;"	v
+g_verbose_indent	miller-rabin	/^g_verbose_indent = ''$/;"	v
+gcd	miller-rabin	/^def gcd(a, b):$/;"	f
+indent_verbose	miller-rabin	/^def indent_verbose(amount):$/;"	f
+indented	miller-rabin	/^def indented(amount):$/;"	f
+inv_mod	miller-rabin	/^def inv_mod(a, n):$/;"	f
+is_prime	miller-rabin	/^def is_prime(n, sure, _precision_for_huge_n=16):$/;"	f
+is_prime2	miller-rabin	/^def is_prime2(n, sure, _precision_for_huge_n=16):$/;"	f
+main	miller-rabin	/^def main():$/;"	f
+print_verbose	miller-rabin	/^def print_verbose(message, end = "\\n"):$/;"	f
+wrapper	miller-rabin	/^        def wrapper(*args, **kwargs):$/;"	f	function:indented._indented_decorator	file:
