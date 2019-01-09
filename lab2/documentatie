@@ -1,0 +1,15 @@
+Vitca Vlad Ilie grupa 237
+
+Laborator 2(problema 3)
+
+phi(n)
+
+Proprietati:
+	phi(n)*phi(m) = phi(n*m)
+	phi(p^k) = (1 - 1/p) * p^k, p prim
+
+fie n = p1^k1 * p2^k2 *...* pn^kn, unde pi ii numar prim
+
+de unde rezulta:
+	phi(n) = p2^k1 * (1 - 1/p1) * .... * pn^kn * (1 - 1/pn)
+	phi(n) = n * (1 - 1/p1) * (1 - 1/p2) * ... * (1 - 1/pn)

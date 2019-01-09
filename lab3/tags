@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+ELGAMAL_H_JEUXOVXY	elGamal.h	/^#define ELGAMAL_H_JEUXOVXY$/;"	d
+Settings	.ycm_extra_conf.py	/^def Settings( **kwargs ):$/;"	f
+__anonc1750c090110	elGamal.cpp	/^	{$/;"	n	namespace:elGamal	file:
+a	elGamal.cpp	/^		bigint p, a;$/;"	m	struct:elGamal::private_key_t	typeref:typename:bigint	file:
+a	main.cpp	/^	int a;$/;"	m	struct:shit_t	typeref:typename:int	file:
+all	makefile	/^all:$/;"	t
+alpha	elGamal.cpp	/^		bigint alpha, beta;$/;"	m	struct:elGamal::ciphertext_block_t	typeref:typename:bigint	file:
+b	main.cpp	/^	int b;$/;"	m	struct:shit_t	typeref:typename:int	file:
+beta	elGamal.cpp	/^		bigint alpha, beta;$/;"	m	struct:elGamal::ciphertext_block_t	typeref:typename:bigint	file:
+bigint	elGamal.h	/^	typedef mpz_class bigint;$/;"	t	namespace:elGamal	typeref:typename:mpz_class
+ciphertext_block_t	elGamal.cpp	/^	struct ciphertext_block_t {$/;"	s	namespace:elGamal	file:
+decrypt	elGamal.cpp	/^	string decrypt(const private_key_t& key, vector<ciphertext_block_t> ciphertext) {$/;"	f	namespace:elGamal	typeref:typename:string
+elGamal	elGamal.cpp	/^namespace elGamal$/;"	n	file:
+elGamal	elGamal.h	/^namespace elGamal$/;"	n
+encrypt	elGamal.cpp	/^	vector<ciphertext_block_t> encrypt(const public_key_t& key, const string& plaintext) {$/;"	f	namespace:elGamal	typeref:typename:vector<ciphertext_block_t>
+g	elGamal.cpp	/^		bigint p, g, ga;$/;"	m	struct:elGamal::public_key_t	typeref:typename:bigint	file:
+ga	elGamal.cpp	/^		bigint p, g, ga;$/;"	m	struct:elGamal::public_key_t	typeref:typename:bigint	file:
+generateKey	elGamal.cpp	/^	pair<public_key_t, private_key_t> generateKey() {$/;"	f	namespace:elGamal	typeref:typename:pair<public_key_t,private_key_t>
+initialize	elGamal.cpp	/^		void initialize() {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:void
+initialized	elGamal.cpp	/^		static bool initialized = false;$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:bool	file:
+main	main.cpp	/^int main()$/;"	f	typeref:typename:int
+no_primes	elGamal.cpp	/^		static int no_primes = 10000;$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:int	file:
+p	elGamal.cpp	/^		bigint p, a;$/;"	m	struct:elGamal::private_key_t	typeref:typename:bigint	file:
+p	elGamal.cpp	/^		bigint p, g, ga;$/;"	m	struct:elGamal::public_key_t	typeref:typename:bigint	file:
+plaintext_block_t	elGamal.cpp	/^	struct plaintext_block_t {$/;"	s	namespace:elGamal	file:
+private_key_t	elGamal.cpp	/^	struct private_key_t {$/;"	s	namespace:elGamal	file:
+public_key_t	elGamal.cpp	/^	struct public_key_t {$/;"	s	namespace:elGamal	file:
+shit_t	main.cpp	/^struct shit_t {$/;"	s	file:
+smallPrimes	elGamal.cpp	/^		static vector<bigint> smallPrimes{};$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:vector<bigint>	file:
+test	elGamal.cpp	/^	void test() {$/;"	f	namespace:elGamal	typeref:typename:void
+value	elGamal.cpp	/^		bigint value;$/;"	m	struct:elGamal::plaintext_block_t	typeref:typename:bigint	file:
