@@ -9,30 +9,48 @@ ELGAMAL_H_JEUXOVXY	elGamal.h	/^#define ELGAMAL_H_JEUXOVXY$/;"	d
 Settings	.ycm_extra_conf.py	/^def Settings( **kwargs ):$/;"	f
 __anonc1750c090110	elGamal.cpp	/^	{$/;"	n	namespace:elGamal	file:
 a	elGamal.cpp	/^		bigint p, a;$/;"	m	struct:elGamal::private_key_t	typeref:typename:bigint	file:
-a	main.cpp	/^	int a;$/;"	m	struct:shit_t	typeref:typename:int	file:
 all	makefile	/^all:$/;"	t
 alpha	elGamal.cpp	/^		bigint alpha, beta;$/;"	m	struct:elGamal::ciphertext_block_t	typeref:typename:bigint	file:
-b	main.cpp	/^	int b;$/;"	m	struct:shit_t	typeref:typename:int	file:
+alphabet	elGamal.cpp	/^		static string alphabet = " `1234567890-=~!@#$%^&*()_+qwertyuiop[{}]\\\\|asdfghjkl;:'\\"zxcvbnm/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:string	file:
+assert_true	elGamal.cpp	/^	void assert_true(bool b, const string&& message) {$/;"	f	namespace:elGamal	typeref:typename:void
 beta	elGamal.cpp	/^		bigint alpha, beta;$/;"	m	struct:elGamal::ciphertext_block_t	typeref:typename:bigint	file:
 bigint	elGamal.h	/^	typedef mpz_class bigint;$/;"	t	namespace:elGamal	typeref:typename:mpz_class
 ciphertext_block_t	elGamal.cpp	/^	struct ciphertext_block_t {$/;"	s	namespace:elGamal	file:
-decrypt	elGamal.cpp	/^	string decrypt(const private_key_t& key, vector<ciphertext_block_t> ciphertext) {$/;"	f	namespace:elGamal	typeref:typename:string
+ciphertext_t	elGamal.cpp	/^	struct ciphertext_t {$/;"	s	namespace:elGamal	file:
+decrypt	elGamal.cpp	/^	string decrypt(const private_key_t& key, ciphertext_t ciphertext) {$/;"	f	namespace:elGamal	typeref:typename:string
+decrypt_s	elGamal.cpp	/^	string decrypt_s(const private_key_t& key, string ciphertext) {$/;"	f	namespace:elGamal	typeref:typename:string
 elGamal	elGamal.cpp	/^namespace elGamal$/;"	n	file:
 elGamal	elGamal.h	/^namespace elGamal$/;"	n
-encrypt	elGamal.cpp	/^	vector<ciphertext_block_t> encrypt(const public_key_t& key, const string& plaintext) {$/;"	f	namespace:elGamal	typeref:typename:vector<ciphertext_block_t>
+encrypt	elGamal.cpp	/^	ciphertext_t encrypt(const public_key_t& key, const string& _plaintext) {$/;"	f	namespace:elGamal	typeref:typename:ciphertext_t
+encrypt_s	elGamal.cpp	/^	string encrypt_s(const public_key_t& key, const string& _plaintext) {$/;"	f	namespace:elGamal	typeref:typename:string
 g	elGamal.cpp	/^		bigint p, g, ga;$/;"	m	struct:elGamal::public_key_t	typeref:typename:bigint	file:
 ga	elGamal.cpp	/^		bigint p, g, ga;$/;"	m	struct:elGamal::public_key_t	typeref:typename:bigint	file:
 generateKey	elGamal.cpp	/^	pair<public_key_t, private_key_t> generateKey() {$/;"	f	namespace:elGamal	typeref:typename:pair<public_key_t,private_key_t>
 initialize	elGamal.cpp	/^		void initialize() {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:void
 initialized	elGamal.cpp	/^		static bool initialized = false;$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:bool	file:
+is_prime	elGamal.cpp	/^		bool is_prime(const bigint& n) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:bool
 main	main.cpp	/^int main()$/;"	f	typeref:typename:int
+message_block_length	elGamal.cpp	/^		unsigned int message_block_length(const bigint& p, const string& alphabet) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:unsigned int
+no_bits	elGamal.cpp	/^		mp_bitcnt_t no_bits(const bigint& n) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:mp_bitcnt_t
+no_digits	elGamal.cpp	/^		unsigned int no_digits(bigint n, int base) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:unsigned int
 no_primes	elGamal.cpp	/^		static int no_primes = 10000;$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:int	file:
+number_to_string	elGamal.cpp	/^		string number_to_string(bigint num, const string& alphabet, unsigned int block_length) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:string
+operator <<	elGamal.cpp	/^		friend std::ostream & operator<<(std::ostream &os, const private_key_t& k) {$/;"	f	namespace:elGamal	typeref:typename:std::ostream &	file:
+operator <<	elGamal.cpp	/^		friend std::ostream & operator<<(std::ostream &os, const public_key_t& k) {$/;"	f	namespace:elGamal	typeref:typename:std::ostream &	file:
+operator >>	elGamal.cpp	/^		friend std::istream& operator >>(std::istream &is, private_key_t& k) {$/;"	f	namespace:elGamal	typeref:typename:std::istream &	file:
+operator >>	elGamal.cpp	/^		friend std::istream& operator >>(std::istream &is, public_key_t& k) {$/;"	f	namespace:elGamal	typeref:typename:std::istream &	file:
 p	elGamal.cpp	/^		bigint p, a;$/;"	m	struct:elGamal::private_key_t	typeref:typename:bigint	file:
 p	elGamal.cpp	/^		bigint p, g, ga;$/;"	m	struct:elGamal::public_key_t	typeref:typename:bigint	file:
 plaintext_block_t	elGamal.cpp	/^	struct plaintext_block_t {$/;"	s	namespace:elGamal	file:
 private_key_t	elGamal.cpp	/^	struct private_key_t {$/;"	s	namespace:elGamal	file:
 public_key_t	elGamal.cpp	/^	struct public_key_t {$/;"	s	namespace:elGamal	file:
-shit_t	main.cpp	/^struct shit_t {$/;"	s	file:
+randomPrime	elGamal.cpp	/^		bigint randomPrime(const bigint& lo, const bigint& hi) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:bigint
+randomPrime	elGamal.cpp	/^		bigint randomPrime(unsigned long int no_digits) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:bigint
+randstate	elGamal.cpp	/^		static gmp_randstate_t randstate;$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:gmp_randstate_t	file:
+security_order	elGamal.cpp	/^		static unsigned int security_order = 50;$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:unsigned int	file:
+separator	elGamal.cpp	/^		static char separator = '\\n';$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:char	file:
 smallPrimes	elGamal.cpp	/^		static vector<bigint> smallPrimes{};$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:vector<bigint>	file:
+string_to_number	elGamal.cpp	/^		bigint string_to_number(const string& str, const string& alphabet) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:bigint
 test	elGamal.cpp	/^	void test() {$/;"	f	namespace:elGamal	typeref:typename:void
+val	elGamal.cpp	/^		vector<ciphertext_block_t> val;$/;"	m	struct:elGamal::ciphertext_t	typeref:typename:vector<ciphertext_block_t>	file:
 value	elGamal.cpp	/^		bigint value;$/;"	m	struct:elGamal::plaintext_block_t	typeref:typename:bigint	file:

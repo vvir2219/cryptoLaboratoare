@@ -1,0 +1,323 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+/usr/lib/libQt5Core.prl	Makefile	/^\/usr\/lib\/libQt5Core.prl:$/;"	t
+/usr/lib/libQt5Gui.prl	Makefile	/^\/usr\/lib\/libQt5Gui.prl:$/;"	t
+/usr/lib/libQt5Widgets.prl	Makefile	/^\/usr\/lib\/libQt5Widgets.prl:$/;"	t
+/usr/lib/qt/mkspecs/common/gcc-base-unix.conf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/common\/gcc-base-unix.conf:$/;"	t
+/usr/lib/qt/mkspecs/common/gcc-base.conf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/common\/gcc-base.conf:$/;"	t
+/usr/lib/qt/mkspecs/common/linux.conf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/common\/linux.conf:$/;"	t
+/usr/lib/qt/mkspecs/common/sanitize.conf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/common\/sanitize.conf:$/;"	t
+/usr/lib/qt/mkspecs/common/unix.conf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/common\/unix.conf:$/;"	t
+/usr/lib/qt/mkspecs/features/default_post.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/default_post.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/default_pre.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/default_pre.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/exceptions.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/exceptions.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/exclusive_builds.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/exclusive_builds.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/file_copies.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/file_copies.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/lex.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/lex.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/moc.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/moc.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/qmake_use.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/qmake_use.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/qt.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/qt.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/qt_config.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/qt_config.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/qt_functions.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/qt_functions.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/resolve_config.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/resolve_config.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/resources.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/resources.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/spec_post.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/spec_post.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/spec_pre.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/spec_pre.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/testcase_targets.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/testcase_targets.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/toolchain.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/toolchain.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/uic.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/uic.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/unix/opengl.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/unix\/opengl.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/unix/thread.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/unix\/thread.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/warn_on.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/warn_on.prf:$/;"	t
+/usr/lib/qt/mkspecs/features/yacc.prf	Makefile	/^\/usr\/lib\/qt\/mkspecs\/features\/yacc.prf:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_Attica.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_Attica.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KActivities.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KActivities.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KArchive.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KArchive.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KAuth.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KAuth.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KBookmarks.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KBookmarks.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KCMUtils.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KCMUtils.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KCodecs.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KCodecs.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KCompletion.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KCompletion.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KConfigCore.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KConfigCore.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KConfigGui.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KConfigGui.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KConfigWidgets.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KConfigWidgets.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KCoreAddons.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KCoreAddons.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KCrash.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KCrash.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KDBusAddons.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KDBusAddons.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KDeclarative.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KDeclarative.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KGlobalAccel.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KGlobalAccel.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KGuiAddons.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KGuiAddons.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KI18n.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KI18n.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KIOCore.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KIOCore.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KIOFileWidgets.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KIOFileWidgets.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KIOGui.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KIOGui.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KIOWidgets.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KIOWidgets.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KIconThemes.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KIconThemes.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KItemModels.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KItemModels.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KItemViews.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KItemViews.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KJS.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KJS.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KJSApi.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KJSApi.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KJobWidgets.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KJobWidgets.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KNTLM.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KNTLM.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KNewStuff.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KNewStuff.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KNewStuffCore.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KNewStuffCore.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KNotifications.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KNotifications.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KParts.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KParts.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KPty.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KPty.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KService.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KService.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KSyntaxHighlighting.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KSyntaxHighlighting.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KTextEditor.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KTextEditor.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KTextWidgets.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KTextWidgets.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KWallet.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KWallet.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KWidgetsAddons.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KWidgetsAddons.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KWindowSystem.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KWindowSystem.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_KXmlGui.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_KXmlGui.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_QuickAddons.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_QuickAddons.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_Solid.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_Solid.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_SonnetCore.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_SonnetCore.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_SonnetUi.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_SonnetUi.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_ThreadWeaver.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_ThreadWeaver.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_accessibility_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_accessibility_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_bootstrap_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_bootstrap_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_concurrent.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_concurrent.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_concurrent_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_concurrent_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_core.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_core.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_core_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_core_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_dbus.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_dbus.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_dbus_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_dbus_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_designer.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_designer.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_designer_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_designer_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_designercomponents_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_designercomponents_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_devicediscovery_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_devicediscovery_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_edid_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_edid_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_egl_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_egl_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_eglfs_kms_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_eglfsdeviceintegration_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_eventdispatcher_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_fb_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_fb_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_fontdatabase_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_fontdatabase_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_glx_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_glx_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_gui.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_gui.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_gui_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_gui_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_help.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_help.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_help_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_help_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_input_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_input_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_kms_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_kms_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_linuxaccessibility_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_location.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_location.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_location_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_location_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_multimedia.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_multimedia.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_multimedia_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_multimedia_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_multimediagsttools_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_multimediagsttools_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_multimediawidgets.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_multimediawidgets.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_multimediawidgets_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_multimediawidgets_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_network.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_network.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_network_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_network_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_opengl.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_opengl.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_opengl_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_opengl_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_openglextensions.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_openglextensions.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_openglextensions_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_openglextensions_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_packetprotocol_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_packetprotocol_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_platformcompositor_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_platformcompositor_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_positioning.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_positioning.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_positioning_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_positioning_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_positioningquick.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_positioningquick.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_positioningquick_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_positioningquick_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_printsupport.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_printsupport.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_printsupport_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_printsupport_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_qml.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_qml.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_qml_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_qml_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_qmldebug_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_qmldebug_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_qmldevtools_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_qmldevtools_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_qmltest.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_qmltest.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_qmltest_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_qmltest_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_qtmultimediaquicktools_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_quick.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_quick.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_quick_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_quick_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_quickcontrols2.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_quickcontrols2.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_quickcontrols2_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_quickcontrols2_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_quickparticles_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_quickparticles_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_quickshapes_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_quickshapes_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_quicktemplates2_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_quicktemplates2_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_quickwidgets.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_quickwidgets.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_quickwidgets_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_quickwidgets_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_script.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_script.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_script_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_script_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_scripttools.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_scripttools.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_scripttools_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_scripttools_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_sensors.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_sensors.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_sensors_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_sensors_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_service_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_service_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_sql.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_sql.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_sql_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_sql_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_svg.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_svg.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_svg_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_svg_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_testlib.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_testlib.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_testlib_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_testlib_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_texttospeech.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_texttospeech.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_texttospeech_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_texttospeech_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_theme_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_theme_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_uiplugin.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_uiplugin.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_uitools.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_uitools.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_uitools_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_uitools_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_vulkan_support_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_vulkan_support_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webchannel.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webchannel.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webchannel_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webchannel_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webengine.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webengine.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webengine_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webengine_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webenginecore.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webenginecore.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webenginecore_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webenginecore_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webenginecoreheaders_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webenginewidgets.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webenginewidgets_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webenginewidgets_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webkit.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webkit.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_webkitwidgets.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_webkitwidgets.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_widgets.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_widgets.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_widgets_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_widgets_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_x11extras.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_x11extras.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_x11extras_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_x11extras_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_xcb_qpa_lib_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_xml.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_xml.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_xml_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_xml_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_xmlpatterns.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_xmlpatterns.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_lib_xmlpatterns_private.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_lib_xmlpatterns_private.pri:$/;"	t
+/usr/lib/qt/mkspecs/modules/qt_phonon4qt5.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/modules\/qt_phonon4qt5.pri:$/;"	t
+/usr/lib/qt/mkspecs/qconfig.pri	Makefile	/^\/usr\/lib\/qt\/mkspecs\/qconfig.pri:$/;"	t
+AR	Makefile	/^AR            = ar cqs$/;"	m
+CC	Makefile	/^CC            = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS        = -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-p/;"	m
+CHK_DIR_EXISTS	Makefile	/^CHK_DIR_EXISTS= test -d$/;"	m
+COMPRESS	Makefile	/^COMPRESS      = gzip -9f$/;"	m
+COPY	Makefile	/^COPY          = cp -f$/;"	m
+COPY_DIR	Makefile	/^COPY_DIR      = cp -f -R$/;"	m
+COPY_FILE	Makefile	/^COPY_FILE     = cp -f$/;"	m
+CXX	Makefile	/^CXX           = g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS      = -pipe -O2 -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-p/;"	m
+DEL_DIR	Makefile	/^DEL_DIR       = rmdir$/;"	m
+DEL_FILE	Makefile	/^DEL_FILE      = rm -f$/;"	m
+DESTDIR	Makefile	/^DESTDIR       = $/;"	m
+DIST	Makefile	/^DIST          = \/usr\/lib\/qt\/mkspecs\/features\/spec_pre.prf \\$/;"	m
+DISTDIR	Makefile	/^DISTDIR = \/home\/bobby\/Faculta\/crypto\/laboratoare\/elGamalGUI\/.tmp\/elGamalGUI1.0.0$/;"	m
+DISTNAME	Makefile	/^DISTNAME      = elGamalGUI1.0.0$/;"	m
+ELGAMALGUI_H	elgamalgui.h	/^#define ELGAMALGUI_H$/;"	d
+ELGAMAL_H_JEUXOVXY	elGamal.h	/^#define ELGAMAL_H_JEUXOVXY$/;"	d
+ElGamalGui	elgamalgui.cpp	/^ElGamalGui::ElGamalGui(QWidget *parent) :$/;"	f	class:ElGamalGui
+ElGamalGui	elgamalgui.h	/^class ElGamalGui : public QMainWindow$/;"	c
+FORCE	Makefile	/^FORCE:$/;"	t
+INCPATH	Makefile	/^INCPATH       = -I. -isystem \/usr\/include\/qt -isystem \/usr\/include\/qt\/QtWidgets -isystem /;"	m
+INSTALL_DIR	Makefile	/^INSTALL_DIR   = cp -f -R$/;"	m
+INSTALL_FILE	Makefile	/^INSTALL_FILE  = install -m 644 -p$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = install -m 755 -p$/;"	m
+LIBS	Makefile	/^LIBS          = $(SUBLIBS) -lgmp -lgmpxx -lQt5Widgets -lQt5Gui -lQt5Core -lGL -lpthread   $/;"	m
+LINK	Makefile	/^LINK          = g++$/;"	m
+MAKEFILE	Makefile	/^MAKEFILE      = Makefile$/;"	m
+MKDIR	Makefile	/^MKDIR         = mkdir -p$/;"	m
+MOVE	Makefile	/^MOVE          = mv -f$/;"	m
+Makefile	Makefile	/^Makefile: elGamalGUI.pro \/usr\/lib\/qt\/mkspecs\/linux-g++\/qmake.conf \/usr\/lib\/qt\/mkspecs\//;"	t
+OBJECTS	Makefile	/^OBJECTS       = main.o \\$/;"	m
+OBJECTS_DIR	Makefile	/^OBJECTS_DIR   = .\/$/;"	m
+QINSTALL	Makefile	/^QINSTALL      = \/usr\/bin\/qmake -install qinstall$/;"	m
+QINSTALL_PROGRAM	Makefile	/^QINSTALL_PROGRAM = \/usr\/bin\/qmake -install qinstall -exe$/;"	m
+RANLIB	Makefile	/^RANLIB        = $/;"	m
+SED	Makefile	/^SED           = sed$/;"	m
+SOURCES	Makefile	/^SOURCES       = main.cpp \\$/;"	m
+STRIP	Makefile	/^STRIP         = strip$/;"	m
+SYMLINK	Makefile	/^SYMLINK       = ln -f -s$/;"	m
+TAR	Makefile	/^TAR           = tar -cf$/;"	m
+TARGET	Makefile	/^TARGET        = elGamalGUI$/;"	m
+Ui	elgamalgui.h	/^namespace Ui {$/;"	n
+__anonc1750c090110	elGamal.cpp	/^	{$/;"	n	namespace:elGamal	file:
+a	elGamal.cpp	/^		bigint p, a;$/;"	m	struct:elGamal::private_key_t	typeref:typename:bigint	file:
+all	Makefile	/^all: Makefile elGamalGUI$/;"	t
+alpha	elGamal.cpp	/^		bigint alpha, beta;$/;"	m	struct:elGamal::ciphertext_block_t	typeref:typename:bigint	file:
+alphabet	elGamal.cpp	/^		static string alphabet = " `1234567890-=~!@#$%^&*()_+qwertyuiop[{}]\\\\|asdfghjkl;:'\\"zxcvbnm/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:string	file:
+assert_true	elGamal.cpp	/^	void assert_true(bool b, const string&& message) {$/;"	f	namespace:elGamal	typeref:typename:void
+benchmark	Makefile	/^benchmark: first$/;"	t
+beta	elGamal.cpp	/^		bigint alpha, beta;$/;"	m	struct:elGamal::ciphertext_block_t	typeref:typename:bigint	file:
+bigint	elGamal.h	/^	typedef mpz_class bigint;$/;"	t	namespace:elGamal	typeref:typename:mpz_class
+check	Makefile	/^check: first$/;"	t
+ciphertext_block_t	elGamal.cpp	/^	struct ciphertext_block_t {$/;"	s	namespace:elGamal	file:
+ciphertext_t	elGamal.cpp	/^	struct ciphertext_t {$/;"	s	namespace:elGamal	file:
+clean	Makefile	/^clean: compiler_clean $/;"	t
+compiler_clean	Makefile	/^compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_uic_clean $/;"	t
+compiler_lex_clean	Makefile	/^compiler_lex_clean:$/;"	t
+compiler_lex_make_all	Makefile	/^compiler_lex_make_all:$/;"	t
+compiler_moc_header_clean	Makefile	/^compiler_moc_header_clean:$/;"	t
+compiler_moc_header_make_all	Makefile	/^compiler_moc_header_make_all: moc_elgamalgui.cpp$/;"	t
+compiler_moc_objc_header_clean	Makefile	/^compiler_moc_objc_header_clean:$/;"	t
+compiler_moc_objc_header_make_all	Makefile	/^compiler_moc_objc_header_make_all:$/;"	t
+compiler_moc_predefs_clean	Makefile	/^compiler_moc_predefs_clean:$/;"	t
+compiler_moc_predefs_make_all	Makefile	/^compiler_moc_predefs_make_all: moc_predefs.h$/;"	t
+compiler_moc_source_clean	Makefile	/^compiler_moc_source_clean:$/;"	t
+compiler_moc_source_make_all	Makefile	/^compiler_moc_source_make_all:$/;"	t
+compiler_rcc_clean	Makefile	/^compiler_rcc_clean:$/;"	t
+compiler_rcc_make_all	Makefile	/^compiler_rcc_make_all:$/;"	t
+compiler_uic_clean	Makefile	/^compiler_uic_clean:$/;"	t
+compiler_uic_make_all	Makefile	/^compiler_uic_make_all: ui_elgamalgui.h$/;"	t
+compiler_yacc_decl_clean	Makefile	/^compiler_yacc_decl_clean:$/;"	t
+compiler_yacc_decl_make_all	Makefile	/^compiler_yacc_decl_make_all:$/;"	t
+compiler_yacc_impl_clean	Makefile	/^compiler_yacc_impl_clean:$/;"	t
+compiler_yacc_impl_make_all	Makefile	/^compiler_yacc_impl_make_all:$/;"	t
+decrypt	elGamal.cpp	/^	string decrypt(const private_key_t& key, ciphertext_t ciphertext) {$/;"	f	namespace:elGamal	typeref:typename:string
+dist	Makefile	/^dist: distdir FORCE$/;"	t
+distclean	Makefile	/^distclean: clean $/;"	t
+distdir	Makefile	/^distdir: FORCE$/;"	t
+elGamal	elGamal.cpp	/^namespace elGamal$/;"	n	file:
+elGamal	elGamal.h	/^namespace elGamal$/;"	n
+elGamal.o	Makefile	/^elGamal.o: elGamal.cpp elGamal.h$/;"	t
+elGamalGUI	Makefile	/^elGamalGUI: ui_elgamalgui.h $(OBJECTS)  $/;"	t
+elGamalGUI.pro	Makefile	/^elGamalGUI.pro:$/;"	t
+elgamalgui.o	Makefile	/^elgamalgui.o: elgamalgui.cpp elgamalgui.h \\$/;"	t
+encrypt	elGamal.cpp	/^	ciphertext_t encrypt(const public_key_t& key, const string& _plaintext) {$/;"	f	namespace:elGamal	typeref:typename:ciphertext_t
+first	Makefile	/^first: all$/;"	t
+g	elGamal.cpp	/^		bigint p, g, ga;$/;"	m	struct:elGamal::public_key_t	typeref:typename:bigint	file:
+ga	elGamal.cpp	/^		bigint p, g, ga;$/;"	m	struct:elGamal::public_key_t	typeref:typename:bigint	file:
+generateKey	elGamal.cpp	/^	pair<public_key_t, private_key_t> generateKey() {$/;"	f	namespace:elGamal	typeref:typename:pair<public_key_t,private_key_t>
+initialize	elGamal.cpp	/^		void initialize() {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:void
+initialized	elGamal.cpp	/^		static bool initialized = false;$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:bool	file:
+install	Makefile	/^install: install_target  FORCE$/;"	t
+install_target	Makefile	/^install_target: first FORCE$/;"	t
+is_prime	elGamal.cpp	/^		bool is_prime(const bigint& n) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:bool
+main	main.cpp	/^int main(int argc, char *argv[])$/;"	f	typeref:typename:int
+main.o	Makefile	/^main.o: main.cpp elgamalgui.h$/;"	t
+message_block_length	elGamal.cpp	/^		unsigned int message_block_length(const bigint& p, const string& alphabet) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:unsigned int
+moc_elgamalgui.cpp	Makefile	/^moc_elgamalgui.cpp: elgamalgui.h \\$/;"	t
+moc_elgamalgui.o	Makefile	/^moc_elgamalgui.o: moc_elgamalgui.cpp $/;"	t
+moc_predefs.h	Makefile	/^moc_predefs.h: \/usr\/lib\/qt\/mkspecs\/features\/data\/dummy.cpp$/;"	t
+mocables	Makefile	/^mocables: compiler_moc_header_make_all compiler_moc_objc_header_make_all compiler_moc_source_mak/;"	t
+mocclean	Makefile	/^mocclean: compiler_moc_header_clean compiler_moc_objc_header_clean compiler_moc_source_clean$/;"	t
+no_bits	elGamal.cpp	/^		mp_bitcnt_t no_bits(const bigint& n) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:mp_bitcnt_t
+no_digits	elGamal.cpp	/^		unsigned int no_digits(bigint n, int base) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:unsigned int
+no_primes	elGamal.cpp	/^		static int no_primes = 10000;$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:int	file:
+number_to_string	elGamal.cpp	/^		string number_to_string(bigint num, const string& alphabet) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:string
+operator <<	elGamal.cpp	/^		friend std::ostream & operator<<(std::ostream &os, const private_key_t& k) {$/;"	f	namespace:elGamal	typeref:typename:std::ostream &	file:
+operator <<	elGamal.cpp	/^		friend std::ostream & operator<<(std::ostream &os, const public_key_t& k) {$/;"	f	namespace:elGamal	typeref:typename:std::ostream &	file:
+operator >>	elGamal.cpp	/^		friend std::istream& operator >>(std::istream &is, private_key_t& k) {$/;"	f	namespace:elGamal	typeref:typename:std::istream &	file:
+operator >>	elGamal.cpp	/^		friend std::istream& operator >>(std::istream &is, public_key_t& k) {$/;"	f	namespace:elGamal	typeref:typename:std::istream &	file:
+p	elGamal.cpp	/^		bigint p, a;$/;"	m	struct:elGamal::private_key_t	typeref:typename:bigint	file:
+p	elGamal.cpp	/^		bigint p, g, ga;$/;"	m	struct:elGamal::public_key_t	typeref:typename:bigint	file:
+plaintext_block_t	elGamal.cpp	/^	struct plaintext_block_t {$/;"	s	namespace:elGamal	file:
+private_key_t	elGamal.cpp	/^	struct private_key_t {$/;"	s	namespace:elGamal	file:
+public_key_t	elGamal.cpp	/^	struct public_key_t {$/;"	s	namespace:elGamal	file:
+qmake	Makefile	/^qmake: FORCE$/;"	t
+qmake_all	Makefile	/^qmake_all: FORCE$/;"	t
+randomPrime	elGamal.cpp	/^		bigint randomPrime(const bigint& lo, const bigint& hi) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:bigint
+randomPrime	elGamal.cpp	/^		bigint randomPrime(unsigned long int no_digits) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:bigint
+randstate	elGamal.cpp	/^		static gmp_randstate_t randstate;$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:gmp_randstate_t	file:
+security_order	elGamal.cpp	/^		static unsigned int security_order = 50;$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:unsigned int	file:
+separator	elGamal.cpp	/^		static char separator = '\\n';$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:char	file:
+smallPrimes	elGamal.cpp	/^		static vector<bigint> smallPrimes{};$/;"	v	namespace:elGamal::__anonc1750c090110	typeref:typename:vector<bigint>	file:
+string_to_number	elGamal.cpp	/^		bigint string_to_number(const string& str, const string& alphabet) {$/;"	f	namespace:elGamal::__anonc1750c090110	typeref:typename:bigint
+test	elGamal.cpp	/^	void test() {$/;"	f	namespace:elGamal	typeref:typename:void
+ui	elgamalgui.h	/^    Ui::ElGamalGui *ui;$/;"	m	class:ElGamalGui	typeref:typename:Ui::ElGamalGui *
+ui_elgamalgui.h	Makefile	/^ui_elgamalgui.h: elgamalgui.ui \\$/;"	t
+uninstall	Makefile	/^uninstall: uninstall_target  FORCE$/;"	t
+uninstall_target	Makefile	/^uninstall_target: FORCE$/;"	t
+val	elGamal.cpp	/^		vector<ciphertext_block_t> val;$/;"	m	struct:elGamal::ciphertext_t	typeref:typename:vector<ciphertext_block_t>	file:
+value	elGamal.cpp	/^		bigint value;$/;"	m	struct:elGamal::plaintext_block_t	typeref:typename:bigint	file:
+~ElGamalGui	elgamalgui.cpp	/^ElGamalGui::~ElGamalGui()$/;"	f	class:ElGamalGui
