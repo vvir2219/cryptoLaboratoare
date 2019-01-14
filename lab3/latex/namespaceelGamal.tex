@@ -1,0 +1,144 @@
+\hypertarget{namespaceelGamal}{}\section{el\+Gamal Namespace Reference}
+\label{namespaceelGamal}\index{el\+Gamal@{el\+Gamal}}
+
+
+\mbox{\hyperlink{namespaceelGamal}{el\+Gamal}} class, defines, \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}. Functions \+: generate\+Key -\/ generates a pair of containing public and private key encrypt, decrypt -\/ encrypts and decrypts, works on blocks encrypt\+\_\+s, decrypt\+\_\+s -\/ as above but works on strings  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structelGamal_1_1ciphertext__block__t}{ciphertext\+\_\+block\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structelGamal_1_1plaintext__block__t}{plaintext\+\_\+block\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}\label{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}} 
+typedef mpz\+\_\+class {\bfseries bigint}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+pair$<$ \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}} $>$ \mbox{\hyperlink{namespaceelGamal_a146d7e0430b165ea18111d6342b7888b}{generate\+Key}} ()
+\begin{DoxyCompactList}\small\item\em Generates public and private key. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}} \mbox{\hyperlink{namespaceelGamal_aea2534e80b8368b1dd998cff835ef643}{encrypt}} (const \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}} \&key, const string \&plaintext)
+\begin{DoxyCompactList}\small\item\em Encrypts a plaintext given as string using the provided key. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceelGamal_a7d43bd19f4fbfe6cca1232a7b2f23af6}{decrypt}} (const \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}} \&key, \mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}} ciphertext)
+\begin{DoxyCompactList}\small\item\em Decrypts the ciphertext (\mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}) using a key. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceelGamal_af1b50ebf015473027eadf9ba9f12ba95}{encrypt\+\_\+s}} (const \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}} \&key, const string \&plaintext)
+\begin{DoxyCompactList}\small\item\em Encrypts a plaintext given as string using the provided key. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceelGamal_a91138d747c43e157f27fe43d0f338808}{decrypt\+\_\+s}} (const \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}} \&key, string ciphertext)
+\begin{DoxyCompactList}\small\item\em Decrypts the ciphertext (\mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}) using a key. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceelGamal_a1be22a37709d73fbc4580b00a396c0b9}\label{namespaceelGamal_a1be22a37709d73fbc4580b00a396c0b9}} 
+void {\bfseries assert\+\_\+true} (bool b, const string \&\&message)
+\item 
+\mbox{\Hypertarget{namespaceelGamal_a2c9abe3957874b9c4bb9924daafc3ba2}\label{namespaceelGamal_a2c9abe3957874b9c4bb9924daafc3ba2}} 
+void {\bfseries test} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{namespaceelGamal}{el\+Gamal}} class, defines, \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}. Functions \+: generate\+Key -\/ generates a pair of containing public and private key encrypt, decrypt -\/ encrypts and decrypts, works on blocks encrypt\+\_\+s, decrypt\+\_\+s -\/ as above but works on strings 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceelGamal_a7d43bd19f4fbfe6cca1232a7b2f23af6}\label{namespaceelGamal_a7d43bd19f4fbfe6cca1232a7b2f23af6}} 
+\index{el\+Gamal@{el\+Gamal}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!el\+Gamal@{el\+Gamal}}
+\subsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily string el\+Gamal\+::decrypt (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}} \&}]{key,  }\item[{\mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}}]{ciphertext }\end{DoxyParamCaption})}
+
+
+
+Decrypts the ciphertext (\mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}) using a key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}}, returned by generate\+Key \\
+\hline
+{\em ciphertext} & \mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}} returned by the encrypt method\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string -\/ the plaintext 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceelGamal_a91138d747c43e157f27fe43d0f338808}\label{namespaceelGamal_a91138d747c43e157f27fe43d0f338808}} 
+\index{el\+Gamal@{el\+Gamal}!decrypt\+\_\+s@{decrypt\+\_\+s}}
+\index{decrypt\+\_\+s@{decrypt\+\_\+s}!el\+Gamal@{el\+Gamal}}
+\subsubsection{\texorpdfstring{decrypt\+\_\+s()}{decrypt\_s()}}
+{\footnotesize\ttfamily string el\+Gamal\+::decrypt\+\_\+s (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}} \&}]{key,  }\item[{string}]{ciphertext }\end{DoxyParamCaption})}
+
+
+
+Decrypts the ciphertext (\mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}) using a key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}}, returned by generate\+Key \\
+\hline
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string -\/ the plaintext 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceelGamal_aea2534e80b8368b1dd998cff835ef643}\label{namespaceelGamal_aea2534e80b8368b1dd998cff835ef643}} 
+\index{el\+Gamal@{el\+Gamal}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!el\+Gamal@{el\+Gamal}}
+\subsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}} el\+Gamal\+::encrypt (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}} \&}]{key,  }\item[{const string \&}]{plaintext }\end{DoxyParamCaption})}
+
+
+
+Encrypts a plaintext given as string using the provided key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}}, returned by generate\+Key \\
+\hline
+{\em plaintext} & string, any string within the alphabet of the \mbox{\hyperlink{namespaceelGamal}{el\+Gamal}} class\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ciphertext -\/ ciphertext as a vector of tuples of numbers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceelGamal_af1b50ebf015473027eadf9ba9f12ba95}\label{namespaceelGamal_af1b50ebf015473027eadf9ba9f12ba95}} 
+\index{el\+Gamal@{el\+Gamal}!encrypt\+\_\+s@{encrypt\+\_\+s}}
+\index{encrypt\+\_\+s@{encrypt\+\_\+s}!el\+Gamal@{el\+Gamal}}
+\subsubsection{\texorpdfstring{encrypt\+\_\+s()}{encrypt\_s()}}
+{\footnotesize\ttfamily string el\+Gamal\+::encrypt\+\_\+s (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}} \&}]{key,  }\item[{const string \&}]{plaintext }\end{DoxyParamCaption})}
+
+
+
+Encrypts a plaintext given as string using the provided key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}}, returned by generate\+Key \\
+\hline
+{\em plaintext} & string, any string within the alphabet of the \mbox{\hyperlink{namespaceelGamal}{el\+Gamal}} class\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string -\/ encrypted text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceelGamal_a146d7e0430b165ea18111d6342b7888b}\label{namespaceelGamal_a146d7e0430b165ea18111d6342b7888b}} 
+\index{el\+Gamal@{el\+Gamal}!generate\+Key@{generate\+Key}}
+\index{generate\+Key@{generate\+Key}!el\+Gamal@{el\+Gamal}}
+\subsubsection{\texorpdfstring{generate\+Key()}{generateKey()}}
+{\footnotesize\ttfamily pair$<$ \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}} $>$ el\+Gamal\+::generate\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generates public and private key. 
+
+\begin{DoxyReturn}{Returns}
+A pair containg $<$\mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}}$>$ 
+\end{DoxyReturn}
