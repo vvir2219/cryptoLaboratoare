@@ -4,14 +4,39 @@
 
 namespace elGamal
 {
+	/**
+	 * @brief Internal state of the elGamal algorithm
+	 */
 	namespace
 	{
+		/**
+		 * @brief Defines if the internal state is initialized or not
+		 */
 		static bool initialized = false;
+		/**
+		 * @brief Number of primes against which is tested the initial
+		 * composition of a bit possible prime.
+		 */
 		static int no_primes = 10000;
+		/**
+		 * @brief Half of the number of digits in base 10 of the prime used in
+		 * key generation.
+		 */
 		static unsigned int security_order = 50;
+		/**
+		 * @brief Internal vector of small primes for fast composite number
+		 * sieving.
+		 */
 		static vector<bigint> smallPrimes{};
+		/**
+		 * @brief Random state for mersene twister uniform random number
+		 * generator.
+		 */
 		static gmp_randstate_t randstate;
 
+		/**
+		 * @brief Initializes the internal state.
+		 */
 		void initialize() {
 			smallPrimes.clear();
 
@@ -30,6 +55,13 @@ namespace elGamal
 			initialized = true;
 		}
 
+		/**
+		 * @brief Checks if a number n is prime
+		 *
+		 * @param n - The number to be checked
+		 *
+		 * @return true if prime, false if not
+		 */
 		bool is_prime(const bigint& n) {
 			bigint sqrtn;
 			bool is_square = mpz_root(sqrtn.get_mpz_t(), n.get_mpz_t(), 2);
@@ -45,6 +77,14 @@ namespace elGamal
 			return mpz_probab_prime_p(n.get_mpz_t(), 50) != 0;
 		}
 
+		/**
+		 * @brief Generates a random prime between a lower and an upper bound
+		 *
+		 * @param lo - lower bound
+		 * @param hi - upper bound
+		 *
+		 * @return - Integer - the prime
+		 */
 		bigint randomPrime(const bigint& lo, const bigint& hi) {
 			if (!initialized)
 				initialize();
@@ -63,6 +103,13 @@ namespace elGamal
 			return big_prime;
 		}
 
+		/**
+		 * @brief Generates a random prime of a given number of digits
+		 *
+		 * @param no_digits - Integer, number of digits of the generated prime
+		 *
+		 * @return Integer - the prime
+		 */
 		bigint randomPrime(unsigned long int no_digits) {
 			bigint lo, hi;
 			mpz_ui_pow_ui(lo.get_mpz_t(), 10, no_digits -1);
@@ -70,6 +117,14 @@ namespace elGamal
 			return randomPrime(lo, hi);
 		}
 
+		/**
+		 * @brief Returns the number of digits of a number in a given base
+		 *
+		 * @param n - the number
+		 * @param base - the base
+		 *
+		 * @return The number of digits
+		 */
 		unsigned int no_digits(bigint n, int base) {
 			unsigned int digits = 0;
 			while (n > 0){
@@ -79,6 +134,14 @@ namespace elGamal
 			return digits;
 		}
 
+		/**
+		 * @brief Transfrms a string into a number
+		 *
+		 * @param str - the string
+		 * @param alphabet - the alphabet which is the base of the string
+		 *
+		 * @return The 10th base representaion of str
+		 */
 		bigint string_to_number(const string& str, const string& alphabet) {
 			unsigned int base = alphabet.length();
 			bigint val = 0;
@@ -90,6 +153,16 @@ namespace elGamal
 			return val;
 		}
 
+		/**
+		 * @brief Transforms a number into a string
+		 *
+		 * @param num - the number
+		 * @param alphabet - the alphabet which will be the bse of the output string
+		 * @param block_length - the block length of the string, if the string
+		 * representation is smaller, it will be padded with 0 in the given alphabet
+		 *
+		 * @return The "alphabet"th base representation of num
+		 */
 		string number_to_string(bigint num, const string& alphabet, unsigned int block_length) {
 			unsigned int base = alphabet.length();
 			string str;
@@ -105,6 +178,14 @@ namespace elGamal
 			return str;
 		}
 
+		/**
+		 * @brief Computes the necessary length of the message blocks.
+		 *
+		 * @param p - prime number
+		 * @param alphabet - the alphabet of the message
+		 *
+		 * @return Number of digits in the alphabet
+		 */
 		unsigned int message_block_length(const bigint& p, const string& alphabet) {
 			return no_digits(p, alphabet.length()) - 1;
 		}
@@ -228,19 +309,14 @@ namespace elGamal
 		return decrypt(key, encrypted);
 	}
 
+	/**
+	 * @brief Helper function used for unit tests
+	 *
+	 * @param b - boolean
+	 * @param message - Error message thrown in case b does not check
+	 */
 	void assert_true(bool b, const string&& message) {
 		if (!b)
 			throw message;
-	}
-
-	void test() {
-		using namespace std;
-
-		auto key = generateKey();
-		auto ciphertext = encrypt_s(key.first, "   ana are mere");
-		cout << "Ciphertext: " << ciphertext << "\n";
-		cout << "Text: \"" << decrypt_s(key.second, ciphertext) << "\"\n";
-
-		initialized = false;
 	}
 } /* elGamal */

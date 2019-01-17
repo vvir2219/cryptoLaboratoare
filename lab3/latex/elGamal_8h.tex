@@ -1,0 +1,54 @@
+\hypertarget{elGamal_8h}{}\section{el\+Gamal.\+h File Reference}
+\label{elGamal_8h}\index{el\+Gamal.\+h@{el\+Gamal.\+h}}
+{\ttfamily \#include $<$gmp.\+h$>$}\newline
+{\ttfamily \#include $<$gmpxx.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structelGamal_1_1public__key__t}{el\+Gamal\+::public\+\_\+key\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structured public key, used in encryption. Contains\+: \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structelGamal_1_1private__key__t}{el\+Gamal\+::private\+\_\+key\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structured private key, used in decryption. Contains\+: \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structelGamal_1_1plaintext__block__t}{el\+Gamal\+::plaintext\+\_\+block\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Text block as an integer. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structelGamal_1_1ciphertext__block__t}{el\+Gamal\+::ciphertext\+\_\+block\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Ciphertext block as a pair of integers (alpha, beta) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structelGamal_1_1ciphertext__t}{el\+Gamal\+::ciphertext\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Vector of ciphertext blocks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceelGamal}{el\+Gamal}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespaceelGamal}{el\+Gamal}} class, defines, \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}. Functions \+: generate\+Key -\/ generates a pair of containing public and private key encrypt, decrypt -\/ encrypts and decrypts, works on blocks encrypt\+\_\+s, decrypt\+\_\+s -\/ as above but works on strings \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef mpz\+\_\+class \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{el\+Gamal\+::bigint}}
+\begin{DoxyCompactList}\small\item\em Bigint class used everywhere within this algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+pair$<$ public\+\_\+key\+\_\+t, private\+\_\+key\+\_\+t $>$ \mbox{\hyperlink{namespaceelGamal_a146d7e0430b165ea18111d6342b7888b}{el\+Gamal\+::generate\+Key}} ()
+\begin{DoxyCompactList}\small\item\em Generates public and private key. \end{DoxyCompactList}\item 
+ciphertext\+\_\+t \mbox{\hyperlink{namespaceelGamal_aea2534e80b8368b1dd998cff835ef643}{el\+Gamal\+::encrypt}} (const public\+\_\+key\+\_\+t \&key, const string \&plaintext)
+\begin{DoxyCompactList}\small\item\em Encrypts a plaintext given as string using the provided key. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceelGamal_a7d43bd19f4fbfe6cca1232a7b2f23af6}{el\+Gamal\+::decrypt}} (const private\+\_\+key\+\_\+t \&key, ciphertext\+\_\+t ciphertext)
+\begin{DoxyCompactList}\small\item\em Decrypts the ciphertext (\mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}) using a key. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceelGamal_af1b50ebf015473027eadf9ba9f12ba95}{el\+Gamal\+::encrypt\+\_\+s}} (const public\+\_\+key\+\_\+t \&key, const string \&plaintext)
+\begin{DoxyCompactList}\small\item\em Encrypts a plaintext given as string using the provided key. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceelGamal_a91138d747c43e157f27fe43d0f338808}{el\+Gamal\+::decrypt\+\_\+s}} (const private\+\_\+key\+\_\+t \&key, string ciphertext)
+\begin{DoxyCompactList}\small\item\em Decrypts the ciphertext (\mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}) using a key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{namespaceelGamal_af54bb3d0000ef0479ad0d9f9ad7b1a6a}{el\+Gamal\+::alphabet}} = \char`\"{} abcdefghijklmnopqrstuvwxyz\char`\"{}
+\begin{DoxyCompactList}\small\item\em The alphabet upon which the encryption and decryption takes place. \end{DoxyCompactList}\item 
+static char \mbox{\hyperlink{namespaceelGamal_aa6af729a807120cdf78282b9426eac01}{el\+Gamal\+::separator}} = \textquotesingle{}\textbackslash{}n\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Separator of keys in the serialization and deserialization of public and private keys. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,246 @@
+\hypertarget{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03}{}\section{el\+Gamal\+:\+:anonymous\+\_\+namespace\{el\+Gamal.\+cpp\} Namespace Reference}
+\label{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03}\index{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}}
+
+
+Internal state of the \mbox{\hyperlink{namespaceelGamal}{el\+Gamal}} algorithm.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a0d4e747786cfe3b13f616cabca77654e}{initialize}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the internal state. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a88b5bcec9edd3f2633f88d03249ff1d4}{is\+\_\+prime}} (const \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} \&n)
+\begin{DoxyCompactList}\small\item\em Checks if a number n is prime. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a42d70441fa5e7410b3b77878cbc4ddfa}{random\+Prime}} (const \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} \&lo, const \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} \&hi)
+\begin{DoxyCompactList}\small\item\em Generates a random prime between a lower and an upper bound. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a13863cb7d4c4e633937d3e86d03ab477}{random\+Prime}} (unsigned long int \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a4fd4ce5779202f36b700cb292fe5ad2b}{no\+\_\+digits}})
+\begin{DoxyCompactList}\small\item\em Generates a random prime of a given number of digits. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a4fd4ce5779202f36b700cb292fe5ad2b}{no\+\_\+digits}} (\mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} n, int base)
+\begin{DoxyCompactList}\small\item\em Returns the number of digits of a number in a given base. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a7c87ed0fcfe81fb5eb26c6915de621a5}{string\+\_\+to\+\_\+number}} (const string \&str, const string \&\mbox{\hyperlink{namespaceelGamal_af54bb3d0000ef0479ad0d9f9ad7b1a6a}{alphabet}})
+\begin{DoxyCompactList}\small\item\em Transfrms a string into a number. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_ae7b9cdc894b5646eb4b76ee13e509cd5}{number\+\_\+to\+\_\+string}} (\mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} num, const string \&\mbox{\hyperlink{namespaceelGamal_af54bb3d0000ef0479ad0d9f9ad7b1a6a}{alphabet}}, unsigned int block\+\_\+length)
+\begin{DoxyCompactList}\small\item\em Transforms a number into a string. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a0b7b4b6f2e313fef83acd7d5918d42b5}{message\+\_\+block\+\_\+length}} (const \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} \&p, const string \&\mbox{\hyperlink{namespaceelGamal_af54bb3d0000ef0479ad0d9f9ad7b1a6a}{alphabet}})
+\begin{DoxyCompactList}\small\item\em Computes the necessary length of the message blocks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a84c2d63e328c14f55fe67906cfd6a9ad}{initialized}} = false
+\begin{DoxyCompactList}\small\item\em Defines if the internal state is initialized or not. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a7175fc639adb9e72cfc1bde02c26a5cc}{no\+\_\+primes}} = 10000
+\begin{DoxyCompactList}\small\item\em Number of primes against which is tested the initial composition of a bit possible prime. \end{DoxyCompactList}\item 
+static unsigned int \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_ad9ef8cca8d7c022e5348cef34a0bca16}{security\+\_\+order}} = 50
+\begin{DoxyCompactList}\small\item\em Half of the number of digits in base 10 of the prime used in key generation. \end{DoxyCompactList}\item 
+static vector$<$ \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} $>$ \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a8de2fd78da2639622fdba15243c420a5}{small\+Primes}} \{\}
+\begin{DoxyCompactList}\small\item\em Internal vector of small primes for fast composite number sieving. \end{DoxyCompactList}\item 
+static gmp\+\_\+randstate\+\_\+t \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_af09e61b19359526682e6b7bf5b98f828}{randstate}}
+\begin{DoxyCompactList}\small\item\em Random state for mersene twister uniform random number generator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Internal state of the \mbox{\hyperlink{namespaceelGamal}{el\+Gamal}} algorithm. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a0d4e747786cfe3b13f616cabca77654e}\label{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a0d4e747786cfe3b13f616cabca77654e}} 
+\index{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}!initialize@{initialize}}
+\index{initialize@{initialize}!el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the internal state. 
+
+\mbox{\Hypertarget{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a88b5bcec9edd3f2633f88d03249ff1d4}\label{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a88b5bcec9edd3f2633f88d03249ff1d4}} 
+\index{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}!is\+\_\+prime@{is\+\_\+prime}}
+\index{is\+\_\+prime@{is\+\_\+prime}!el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}}
+\subsubsection{\texorpdfstring{is\+\_\+prime()}{is\_prime()}}
+{\footnotesize\ttfamily bool el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::is\+\_\+prime (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} \&}]{n }\end{DoxyParamCaption})}
+
+
+
+Checks if a number n is prime. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & -\/ The number to be checked\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if prime, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a0b7b4b6f2e313fef83acd7d5918d42b5}\label{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a0b7b4b6f2e313fef83acd7d5918d42b5}} 
+\index{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}!message\+\_\+block\+\_\+length@{message\+\_\+block\+\_\+length}}
+\index{message\+\_\+block\+\_\+length@{message\+\_\+block\+\_\+length}!el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}}
+\subsubsection{\texorpdfstring{message\+\_\+block\+\_\+length()}{message\_block\_length()}}
+{\footnotesize\ttfamily unsigned int el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::message\+\_\+block\+\_\+length (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} \&}]{p,  }\item[{const string \&}]{alphabet }\end{DoxyParamCaption})}
+
+
+
+Computes the necessary length of the message blocks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & -\/ prime number \\
+\hline
+{\em alphabet} & -\/ the alphabet of the message\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of digits in the alphabet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a4fd4ce5779202f36b700cb292fe5ad2b}\label{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a4fd4ce5779202f36b700cb292fe5ad2b}} 
+\index{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}!no\+\_\+digits@{no\+\_\+digits}}
+\index{no\+\_\+digits@{no\+\_\+digits}!el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}}
+\subsubsection{\texorpdfstring{no\+\_\+digits()}{no\_digits()}}
+{\footnotesize\ttfamily unsigned int el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::no\+\_\+digits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}}}]{n,  }\item[{int}]{base }\end{DoxyParamCaption})}
+
+
+
+Returns the number of digits of a number in a given base. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & -\/ the number \\
+\hline
+{\em base} & -\/ the base\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of digits 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_ae7b9cdc894b5646eb4b76ee13e509cd5}\label{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_ae7b9cdc894b5646eb4b76ee13e509cd5}} 
+\index{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}!number\+\_\+to\+\_\+string@{number\+\_\+to\+\_\+string}}
+\index{number\+\_\+to\+\_\+string@{number\+\_\+to\+\_\+string}!el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}}
+\subsubsection{\texorpdfstring{number\+\_\+to\+\_\+string()}{number\_to\_string()}}
+{\footnotesize\ttfamily string el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::number\+\_\+to\+\_\+string (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}}}]{num,  }\item[{const string \&}]{alphabet,  }\item[{unsigned int}]{block\+\_\+length }\end{DoxyParamCaption})}
+
+
+
+Transforms a number into a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & -\/ the number \\
+\hline
+{\em alphabet} & -\/ the alphabet which will be the bse of the output string \\
+\hline
+{\em block\+\_\+length} & -\/ the block length of the string, if the string representation is smaller, it will be padded with 0 in the given alphabet\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \char`\"{}alphabet\char`\"{}th base representation of num 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a42d70441fa5e7410b3b77878cbc4ddfa}\label{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a42d70441fa5e7410b3b77878cbc4ddfa}} 
+\index{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}!random\+Prime@{random\+Prime}}
+\index{random\+Prime@{random\+Prime}!el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}}
+\subsubsection{\texorpdfstring{random\+Prime()}{randomPrime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::random\+Prime (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} \&}]{lo,  }\item[{const \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} \&}]{hi }\end{DoxyParamCaption})}
+
+
+
+Generates a random prime between a lower and an upper bound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lo} & -\/ lower bound \\
+\hline
+{\em hi} & -\/ upper bound\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Integer -\/ the prime 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a13863cb7d4c4e633937d3e86d03ab477}\label{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a13863cb7d4c4e633937d3e86d03ab477}} 
+\index{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}!random\+Prime@{random\+Prime}}
+\index{random\+Prime@{random\+Prime}!el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}}
+\subsubsection{\texorpdfstring{random\+Prime()}{randomPrime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::random\+Prime (\begin{DoxyParamCaption}\item[{unsigned long int}]{no\+\_\+digits }\end{DoxyParamCaption})}
+
+
+
+Generates a random prime of a given number of digits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no\+\_\+digits} & -\/ Integer, number of digits of the generated prime\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Integer -\/ the prime 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a7c87ed0fcfe81fb5eb26c6915de621a5}\label{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a7c87ed0fcfe81fb5eb26c6915de621a5}} 
+\index{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}!string\+\_\+to\+\_\+number@{string\+\_\+to\+\_\+number}}
+\index{string\+\_\+to\+\_\+number@{string\+\_\+to\+\_\+number}!el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}}
+\subsubsection{\texorpdfstring{string\+\_\+to\+\_\+number()}{string\_to\_number()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::string\+\_\+to\+\_\+number (\begin{DoxyParamCaption}\item[{const string \&}]{str,  }\item[{const string \&}]{alphabet }\end{DoxyParamCaption})}
+
+
+
+Transfrms a string into a number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & -\/ the string \\
+\hline
+{\em alphabet} & -\/ the alphabet which is the base of the string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The 10th base representaion of str 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a84c2d63e328c14f55fe67906cfd6a9ad}\label{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a84c2d63e328c14f55fe67906cfd6a9ad}} 
+\index{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}!initialized@{initialized}}
+\index{initialized@{initialized}!el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}}
+\subsubsection{\texorpdfstring{initialized}{initialized}}
+{\footnotesize\ttfamily bool el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::initialized = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Defines if the internal state is initialized or not. 
+
+\mbox{\Hypertarget{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a7175fc639adb9e72cfc1bde02c26a5cc}\label{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a7175fc639adb9e72cfc1bde02c26a5cc}} 
+\index{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}!no\+\_\+primes@{no\+\_\+primes}}
+\index{no\+\_\+primes@{no\+\_\+primes}!el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}}
+\subsubsection{\texorpdfstring{no\+\_\+primes}{no\_primes}}
+{\footnotesize\ttfamily int el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::no\+\_\+primes = 10000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Number of primes against which is tested the initial composition of a bit possible prime. 
+
+\mbox{\Hypertarget{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_af09e61b19359526682e6b7bf5b98f828}\label{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_af09e61b19359526682e6b7bf5b98f828}} 
+\index{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}!randstate@{randstate}}
+\index{randstate@{randstate}!el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}}
+\subsubsection{\texorpdfstring{randstate}{randstate}}
+{\footnotesize\ttfamily gmp\+\_\+randstate\+\_\+t el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::randstate\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Random state for mersene twister uniform random number generator. 
+
+\mbox{\Hypertarget{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_ad9ef8cca8d7c022e5348cef34a0bca16}\label{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_ad9ef8cca8d7c022e5348cef34a0bca16}} 
+\index{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}!security\+\_\+order@{security\+\_\+order}}
+\index{security\+\_\+order@{security\+\_\+order}!el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}}
+\subsubsection{\texorpdfstring{security\+\_\+order}{security\_order}}
+{\footnotesize\ttfamily unsigned int el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::security\+\_\+order = 50\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Half of the number of digits in base 10 of the prime used in key generation. 
+
+\mbox{\Hypertarget{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a8de2fd78da2639622fdba15243c420a5}\label{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a8de2fd78da2639622fdba15243c420a5}} 
+\index{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}!small\+Primes@{small\+Primes}}
+\index{small\+Primes@{small\+Primes}!el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}@{el\+Gamal\+::anonymous\+\_\+namespace\lcurly{}el\+Gamal.\+cpp\rcurly{}}}
+\subsubsection{\texorpdfstring{small\+Primes}{smallPrimes}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}}$>$ el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::small\+Primes \{\}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Internal vector of small primes for fast composite number sieving. 
+

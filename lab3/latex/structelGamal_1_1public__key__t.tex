@@ -1,28 +1,78 @@
 \hypertarget{structelGamal_1_1public__key__t}{}\section{el\+Gamal\+:\+:public\+\_\+key\+\_\+t Struct Reference}
 \label{structelGamal_1_1public__key__t}\index{el\+Gamal\+::public\+\_\+key\+\_\+t@{el\+Gamal\+::public\+\_\+key\+\_\+t}}
+
+
+Structured public key, used in encryption. Contains\+:  
+
+
+
+
+{\ttfamily \#include $<$el\+Gamal.\+h$>$}
+
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{structelGamal_1_1public__key__t_a0f62fb91be391d0ca4abfa147626a0c8}\label{structelGamal_1_1public__key__t_a0f62fb91be391d0ca4abfa147626a0c8}} 
-bigint {\bfseries p}
+\mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} \mbox{\hyperlink{structelGamal_1_1public__key__t_a0f62fb91be391d0ca4abfa147626a0c8}{p}}
 \item 
-\mbox{\Hypertarget{structelGamal_1_1public__key__t_aa54f804adb7e54538f1e34e7737167e7}\label{structelGamal_1_1public__key__t_aa54f804adb7e54538f1e34e7737167e7}} 
-bigint {\bfseries g}
+\mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} \mbox{\hyperlink{structelGamal_1_1public__key__t_aa54f804adb7e54538f1e34e7737167e7}{g}}
 \item 
-\mbox{\Hypertarget{structelGamal_1_1public__key__t_ad3a62139e6cffaffbb03178eff18ea76}\label{structelGamal_1_1public__key__t_ad3a62139e6cffaffbb03178eff18ea76}} 
-bigint {\bfseries ga}
+\mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} \mbox{\hyperlink{structelGamal_1_1public__key__t_ad3a62139e6cffaffbb03178eff18ea76}{ga}}
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{structelGamal_1_1public__key__t_a046edae80d5819c231b4c2dc64986202}\label{structelGamal_1_1public__key__t_a046edae80d5819c231b4c2dc64986202}} 
-std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}} \&k)
+std\+::ostream \& \mbox{\hyperlink{structelGamal_1_1public__key__t_a046edae80d5819c231b4c2dc64986202}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}} \&k)
 \item 
-\mbox{\Hypertarget{structelGamal_1_1public__key__t_a9d8e3db0096733e107dfb53f121c9e8e}\label{structelGamal_1_1public__key__t_a9d8e3db0096733e107dfb53f121c9e8e}} 
-std\+::istream \& {\bfseries operator$>$$>$} (std\+::istream \&is, \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}} \&k)
+std\+::istream \& \mbox{\hyperlink{structelGamal_1_1public__key__t_a9d8e3db0096733e107dfb53f121c9e8e}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}} \&k)
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structured public key, used in encryption. Contains\+: 
+
+
+\begin{DoxyItemize}
+\item p \+: a big prime
+\item g \+: a generator of Zp
+\item ga \+: g$^\wedge$a 
+\end{DoxyItemize}
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structelGamal_1_1public__key__t_a046edae80d5819c231b4c2dc64986202}\label{structelGamal_1_1public__key__t_a046edae80d5819c231b4c2dc64986202}} 
+\index{el\+Gamal\+::public\+\_\+key\+\_\+t@{el\+Gamal\+::public\+\_\+key\+\_\+t}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!el\+Gamal\+::public\+\_\+key\+\_\+t@{el\+Gamal\+::public\+\_\+key\+\_\+t}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}} \&}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{structelGamal_1_1public__key__t_a9d8e3db0096733e107dfb53f121c9e8e}\label{structelGamal_1_1public__key__t_a9d8e3db0096733e107dfb53f121c9e8e}} 
+\index{el\+Gamal\+::public\+\_\+key\+\_\+t@{el\+Gamal\+::public\+\_\+key\+\_\+t}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!el\+Gamal\+::public\+\_\+key\+\_\+t@{el\+Gamal\+::public\+\_\+key\+\_\+t}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}} \&}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structelGamal_1_1public__key__t_aa54f804adb7e54538f1e34e7737167e7}\label{structelGamal_1_1public__key__t_aa54f804adb7e54538f1e34e7737167e7}} 
+\index{el\+Gamal\+::public\+\_\+key\+\_\+t@{el\+Gamal\+::public\+\_\+key\+\_\+t}!g@{g}}
+\index{g@{g}!el\+Gamal\+::public\+\_\+key\+\_\+t@{el\+Gamal\+::public\+\_\+key\+\_\+t}}
+\subsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} el\+Gamal\+::public\+\_\+key\+\_\+t\+::g}
+
+\mbox{\Hypertarget{structelGamal_1_1public__key__t_ad3a62139e6cffaffbb03178eff18ea76}\label{structelGamal_1_1public__key__t_ad3a62139e6cffaffbb03178eff18ea76}} 
+\index{el\+Gamal\+::public\+\_\+key\+\_\+t@{el\+Gamal\+::public\+\_\+key\+\_\+t}!ga@{ga}}
+\index{ga@{ga}!el\+Gamal\+::public\+\_\+key\+\_\+t@{el\+Gamal\+::public\+\_\+key\+\_\+t}}
+\subsubsection{\texorpdfstring{ga}{ga}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} el\+Gamal\+::public\+\_\+key\+\_\+t\+::ga}
+
+\mbox{\Hypertarget{structelGamal_1_1public__key__t_a0f62fb91be391d0ca4abfa147626a0c8}\label{structelGamal_1_1public__key__t_a0f62fb91be391d0ca4abfa147626a0c8}} 
+\index{el\+Gamal\+::public\+\_\+key\+\_\+t@{el\+Gamal\+::public\+\_\+key\+\_\+t}!p@{p}}
+\index{p@{p}!el\+Gamal\+::public\+\_\+key\+\_\+t@{el\+Gamal\+::public\+\_\+key\+\_\+t}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}} el\+Gamal\+::public\+\_\+key\+\_\+t\+::p}
+
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-el\+Gamal.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{elGamal_8h}{el\+Gamal.\+h}}\end{DoxyCompactItemize}

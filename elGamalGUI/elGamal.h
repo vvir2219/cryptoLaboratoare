@@ -27,7 +27,8 @@ namespace elGamal
 
 	typedef mpz_class bigint;
 
-    static string alphabet = " `1234567890-=~!@#$%^&*()_+qwertyuiop[{}]\\|asdfghjkl;:'\"zxcvbnm,<.>/?QWERTYUIOPASDFGHJKLZXCVBNM\n";
+    //static string alphabet = " `1234567890-=~!@#$%^&*()_+qwertyuiop[{}]\\|asdfghjkl;:'\"zxcvbnm,<.>/?QWERTYUIOPASDFGHJKLZXCVBNM\n";
+    static string alphabet = " abcdefghijklmnopqrstuvwxyz";
 	static char separator = '\n';
 
 	struct public_key_t {

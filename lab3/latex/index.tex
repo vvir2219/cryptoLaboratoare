@@ -1,0 +1,40 @@
+\hypertarget{index_intro_sec}{}\section{Introduction}\label{index_intro_sec}
+In cryptography, the El\+Gamal encryption system is an asymmetric key encryption algorithm for public-\/key cryptography which is based on the Diffie–\+Hellman key exchange. The system provides an additional layer of security by asymmetrically encrypting keys previously used for symmetric message encryption. It was described by Taher Elgamal in 1985. El\+Gamal encryption is used in the free G\+NU Privacy Guard software, recent versions of P\+GP, and other cryptosystems. The Digital Signature Algorithm (D\+SA) is a variant of the El\+Gamal signature scheme, which should not be confused with El\+Gamal encryption. El\+Gamal encryption can be defined over any cyclic group G. Its security depends upon the difficulty of a certain problem in G related to computing discrete logarithms.\hypertarget{index_install_sec}{}\section{The algorithm}\label{index_install_sec}
+El\+Gamal encryption consists of three components\+: the key generator, the encryption algorithm, and the decryption algorithm.\hypertarget{index_key_generation}{}\subsection{Key generation}\label{index_key_generation}
+The key generator works as follows\+:
+
+
+\begin{DoxyItemize}
+\item Alice generates an efficient description of a cyclic group G, of order q, with generator g.
+\item Alice chooses an x randomly from \mbox{[}1..q-\/1\mbox{]}.
+\item Alice computes h = g$^\wedge$x.
+\item Alice publishes h, along with the description of G, q, g as her public key. Alice retains x as her private key, which must be kept secret.
+\end{DoxyItemize}\hypertarget{index_encryption}{}\subsection{Encryption}\label{index_encryption}
+The encryption algorithm works as follows\+: to encrypt a message m to Alice under her public key (G,q,g,h),
+
+
+\begin{DoxyItemize}
+\item Bob chooses a random y from \mbox{[}1...q-\/1\mbox{]}, then calculates alpha =g$^\wedge$y.
+\item Bob calculates the shared secret s = h$^\wedge$y = g$^\wedge$xy.
+\item Bob maps his message m onto an element m\textquotesingle{} of G.
+\item Bob calculates beta = m\textquotesingle{} $\ast$ s.
+\item Bob sends the ciphertext (alpha, beta) = (g$^\wedge$y, m\textquotesingle{} $\ast$ h$^\wedge$y) = (g$^\wedge$y, m\textquotesingle{} $\ast$ g$^\wedge$xy)\} to Alice.
+\end{DoxyItemize}
+
+Note that one can easily find h$^\wedge$y if one knows m\textquotesingle{}. Therefore, a new y is generated for every message to improve security. For this reason, y is also called an ephemeral key.\hypertarget{index_decryption}{}\subsection{Decryption}\label{index_decryption}
+The decryption algorithm works as follows\+: to decrypt a ciphertext (alpha, beta) with her private key x,
+
+
+\begin{DoxyItemize}
+\item Alice calculates the shared secret s\+:=alpha$^\wedge$x
+\item and then computes m\textquotesingle{}\+:=beta $\ast$ s$^\wedge$(-\/1) which she then converts back into the plaintext message m, where s$^\wedge$(-\/1) is the inverse of s in the group G. (E.\+g. modular multiplicative inverse if G is a subgroup of a multiplicative group of integers modulo n).
+\end{DoxyItemize}
+
+The decryption algorithm produces the intended message, since \begin{DoxyVerb}beta * s^(-1) = m' * h^y * (g^xy)^(-1) = m' * g^xy * g^(-xy) = m'.
+\end{DoxyVerb}
+\hypertarget{index_credits}{}\subsection{Credits}\label{index_credits}
+
+\begin{DoxyItemize}
+\item Vitca Vlad Ilie (grupa 237)
+\item Hanc Bogdan (grupa 332) 
+\end{DoxyItemize}

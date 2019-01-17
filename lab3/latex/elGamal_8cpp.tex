@@ -1,0 +1,55 @@
+\hypertarget{elGamal_8cpp}{}\section{el\+Gamal.\+cpp File Reference}
+\label{elGamal_8cpp}\index{el\+Gamal.\+cpp@{el\+Gamal.\+cpp}}
+{\ttfamily \#include \char`\"{}el\+Gamal.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceelGamal}{el\+Gamal}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespaceelGamal}{el\+Gamal}} class, defines, \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}. Functions \+: generate\+Key -\/ generates a pair of containing public and private key encrypt, decrypt -\/ encrypts and decrypts, works on blocks encrypt\+\_\+s, decrypt\+\_\+s -\/ as above but works on strings \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03}{el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}}}
+\begin{DoxyCompactList}\small\item\em Internal state of the \mbox{\hyperlink{namespaceelGamal}{el\+Gamal}} algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a0d4e747786cfe3b13f616cabca77654e}{el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::initialize}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the internal state. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a88b5bcec9edd3f2633f88d03249ff1d4}{el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::is\+\_\+prime}} (const bigint \&n)
+\begin{DoxyCompactList}\small\item\em Checks if a number n is prime. \end{DoxyCompactList}\item 
+bigint \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a42d70441fa5e7410b3b77878cbc4ddfa}{el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::random\+Prime}} (const bigint \&lo, const bigint \&hi)
+\begin{DoxyCompactList}\small\item\em Generates a random prime between a lower and an upper bound. \end{DoxyCompactList}\item 
+bigint \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a13863cb7d4c4e633937d3e86d03ab477}{el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::random\+Prime}} (unsigned long int no\+\_\+digits)
+\begin{DoxyCompactList}\small\item\em Generates a random prime of a given number of digits. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a4fd4ce5779202f36b700cb292fe5ad2b}{el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::no\+\_\+digits}} (bigint n, int base)
+\begin{DoxyCompactList}\small\item\em Returns the number of digits of a number in a given base. \end{DoxyCompactList}\item 
+bigint \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a7c87ed0fcfe81fb5eb26c6915de621a5}{el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::string\+\_\+to\+\_\+number}} (const string \&str, const string \&alphabet)
+\begin{DoxyCompactList}\small\item\em Transfrms a string into a number. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_ae7b9cdc894b5646eb4b76ee13e509cd5}{el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::number\+\_\+to\+\_\+string}} (bigint num, const string \&alphabet, unsigned int block\+\_\+length)
+\begin{DoxyCompactList}\small\item\em Transforms a number into a string. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a0b7b4b6f2e313fef83acd7d5918d42b5}{el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::message\+\_\+block\+\_\+length}} (const bigint \&p, const string \&alphabet)
+\begin{DoxyCompactList}\small\item\em Computes the necessary length of the message blocks. \end{DoxyCompactList}\item 
+pair$<$ public\+\_\+key\+\_\+t, private\+\_\+key\+\_\+t $>$ \mbox{\hyperlink{namespaceelGamal_a146d7e0430b165ea18111d6342b7888b}{el\+Gamal\+::generate\+Key}} ()
+\begin{DoxyCompactList}\small\item\em Generates public and private key. \end{DoxyCompactList}\item 
+ciphertext\+\_\+t \mbox{\hyperlink{namespaceelGamal_aea2534e80b8368b1dd998cff835ef643}{el\+Gamal\+::encrypt}} (const public\+\_\+key\+\_\+t \&key, const string \&plaintext)
+\begin{DoxyCompactList}\small\item\em Encrypts a plaintext given as string using the provided key. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceelGamal_a7d43bd19f4fbfe6cca1232a7b2f23af6}{el\+Gamal\+::decrypt}} (const private\+\_\+key\+\_\+t \&key, ciphertext\+\_\+t ciphertext)
+\begin{DoxyCompactList}\small\item\em Decrypts the ciphertext (\mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}) using a key. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceelGamal_af1b50ebf015473027eadf9ba9f12ba95}{el\+Gamal\+::encrypt\+\_\+s}} (const public\+\_\+key\+\_\+t \&key, const string \&plaintext)
+\begin{DoxyCompactList}\small\item\em Encrypts a plaintext given as string using the provided key. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceelGamal_a91138d747c43e157f27fe43d0f338808}{el\+Gamal\+::decrypt\+\_\+s}} (const private\+\_\+key\+\_\+t \&key, string ciphertext)
+\begin{DoxyCompactList}\small\item\em Decrypts the ciphertext (\mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}) using a key. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespaceelGamal_a1be22a37709d73fbc4580b00a396c0b9}{el\+Gamal\+::assert\+\_\+true}} (bool b, const string \&\&message)
+\begin{DoxyCompactList}\small\item\em Helper function used for unit tests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a84c2d63e328c14f55fe67906cfd6a9ad}{el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::initialized}} = false
+\begin{DoxyCompactList}\small\item\em Defines if the internal state is initialized or not. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a7175fc639adb9e72cfc1bde02c26a5cc}{el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::no\+\_\+primes}} = 10000
+\begin{DoxyCompactList}\small\item\em Number of primes against which is tested the initial composition of a bit possible prime. \end{DoxyCompactList}\item 
+static unsigned int \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_ad9ef8cca8d7c022e5348cef34a0bca16}{el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::security\+\_\+order}} = 50
+\begin{DoxyCompactList}\small\item\em Half of the number of digits in base 10 of the prime used in key generation. \end{DoxyCompactList}\item 
+static vector$<$ bigint $>$ \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_a8de2fd78da2639622fdba15243c420a5}{el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::small\+Primes}} \{\}
+\begin{DoxyCompactList}\small\item\em Internal vector of small primes for fast composite number sieving. \end{DoxyCompactList}\item 
+static gmp\+\_\+randstate\+\_\+t \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03_af09e61b19359526682e6b7bf5b98f828}{el\+Gamal\+::anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}\+::randstate}}
+\begin{DoxyCompactList}\small\item\em Random state for mersene twister uniform random number generator. \end{DoxyCompactList}\end{DoxyCompactItemize}

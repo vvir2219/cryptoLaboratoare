@@ -5,13 +5,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: elGamal Namespace Reference</title>
+<title>ElGamal encryption: elGamal Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -21,8 +27,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">ElGamal encryption
    </div>
+   <div id="projectbrief">Basic implementation of ElGamal encryption scheme</div>
   </td>
  </tr>
  </tbody>
@@ -62,34 +69,47 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">elGamal Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="namespaceelGamal.html" title="elGamal class, defines, public_key_t, private_key_t, ciphertext_t. Functions : generateKey - generate...">elGamal</a> class, defines, <a class="el" href="structelGamal_1_1public__key__t.html">public_key_t</a>, <a class="el" href="structelGamal_1_1private__key__t.html">private_key_t</a>, <a class="el" href="structelGamal_1_1ciphertext__t.html">ciphertext_t</a>. Functions : generateKey - generates a pair of containing public and private key encrypt, decrypt - encrypts and decrypts, works on blocks encrypt_s, decrypt_s - as above but works on strings  
+<p><a class="el" href="namespaceelGamal.html" title="elGamal class, defines, public_key_t, private_key_t, ciphertext_t. Functions : generateKey - generate...">elGamal</a> class, defines, <a class="el" href="structelGamal_1_1public__key__t.html" title="Structured public key, used in encryption. Contains: ">public_key_t</a>, <a class="el" href="structelGamal_1_1private__key__t.html" title="Structured private key, used in decryption. Contains: ">private_key_t</a>, <a class="el" href="structelGamal_1_1ciphertext__t.html" title="Vector of ciphertext blocks. ">ciphertext_t</a>. Functions : generateKey - generates a pair of containing public and private key encrypt, decrypt - encrypts and decrypts, works on blocks encrypt_s, decrypt_s - as above but works on strings  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03.html">anonymous_namespace{elGamal.cpp}</a></td></tr>
+<tr class="memdesc:namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal state of the <a class="el" href="namespaceelGamal.html" title="elGamal class, defines, public_key_t, private_key_t, ciphertext_t. Functions : generateKey - generate...">elGamal</a> algorithm. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelGamal_1_1ciphertext__block__t.html">ciphertext_block_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ciphertext block as a pair of integers (alpha, beta)  <a href="structelGamal_1_1ciphertext__block__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelGamal_1_1ciphertext__t.html">ciphertext_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of ciphertext blocks.  <a href="structelGamal_1_1ciphertext__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelGamal_1_1plaintext__block__t.html">plaintext_block_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text block as an integer.  <a href="structelGamal_1_1plaintext__block__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelGamal_1_1private__key__t.html">private_key_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structured private key, used in decryption. Contains:  <a href="structelGamal_1_1private__key__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelGamal_1_1public__key__t.html">public_key_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structured public key, used in encryption. Contains:  <a href="structelGamal_1_1public__key__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ab2883bf41ce8d738e2428c8ae81b0245"><td class="memItemLeft" align="right" valign="top"><a id="ab2883bf41ce8d738e2428c8ae81b0245"></a>
-typedef mpz_class&#160;</td><td class="memItemRight" valign="bottom"><b>bigint</b></td></tr>
+<tr class="memitem:ab2883bf41ce8d738e2428c8ae81b0245"><td class="memItemLeft" align="right" valign="top">typedef mpz_class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelGamal.html#ab2883bf41ce8d738e2428c8ae81b0245">bigint</a></td></tr>
+<tr class="memdesc:ab2883bf41ce8d738e2428c8ae81b0245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bigint class used everywhere within this algorithm.  <a href="#ab2883bf41ce8d738e2428c8ae81b0245">More...</a><br /></td></tr>
 <tr class="separator:ab2883bf41ce8d738e2428c8ae81b0245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -101,24 +121,84 @@ Functions</h2></td></tr>
 <tr class="memdesc:aea2534e80b8368b1dd998cff835ef643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypts a plaintext given as string using the provided key.  <a href="#aea2534e80b8368b1dd998cff835ef643">More...</a><br /></td></tr>
 <tr class="separator:aea2534e80b8368b1dd998cff835ef643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d43bd19f4fbfe6cca1232a7b2f23af6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelGamal.html#a7d43bd19f4fbfe6cca1232a7b2f23af6">decrypt</a> (const <a class="el" href="structelGamal_1_1private__key__t.html">private_key_t</a> &amp;key, <a class="el" href="structelGamal_1_1ciphertext__t.html">ciphertext_t</a> ciphertext)</td></tr>
-<tr class="memdesc:a7d43bd19f4fbfe6cca1232a7b2f23af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrypts the ciphertext (<a class="el" href="structelGamal_1_1ciphertext__t.html">ciphertext_t</a>) using a key.  <a href="#a7d43bd19f4fbfe6cca1232a7b2f23af6">More...</a><br /></td></tr>
+<tr class="memdesc:a7d43bd19f4fbfe6cca1232a7b2f23af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrypts the ciphertext (<a class="el" href="structelGamal_1_1ciphertext__t.html" title="Vector of ciphertext blocks. ">ciphertext_t</a>) using a key.  <a href="#a7d43bd19f4fbfe6cca1232a7b2f23af6">More...</a><br /></td></tr>
 <tr class="separator:a7d43bd19f4fbfe6cca1232a7b2f23af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1b50ebf015473027eadf9ba9f12ba95"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelGamal.html#af1b50ebf015473027eadf9ba9f12ba95">encrypt_s</a> (const <a class="el" href="structelGamal_1_1public__key__t.html">public_key_t</a> &amp;key, const string &amp;plaintext)</td></tr>
 <tr class="memdesc:af1b50ebf015473027eadf9ba9f12ba95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypts a plaintext given as string using the provided key.  <a href="#af1b50ebf015473027eadf9ba9f12ba95">More...</a><br /></td></tr>
 <tr class="separator:af1b50ebf015473027eadf9ba9f12ba95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91138d747c43e157f27fe43d0f338808"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelGamal.html#a91138d747c43e157f27fe43d0f338808">decrypt_s</a> (const <a class="el" href="structelGamal_1_1private__key__t.html">private_key_t</a> &amp;key, string ciphertext)</td></tr>
-<tr class="memdesc:a91138d747c43e157f27fe43d0f338808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrypts the ciphertext (<a class="el" href="structelGamal_1_1ciphertext__t.html">ciphertext_t</a>) using a key.  <a href="#a91138d747c43e157f27fe43d0f338808">More...</a><br /></td></tr>
+<tr class="memdesc:a91138d747c43e157f27fe43d0f338808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrypts the ciphertext (<a class="el" href="structelGamal_1_1ciphertext__t.html" title="Vector of ciphertext blocks. ">ciphertext_t</a>) using a key.  <a href="#a91138d747c43e157f27fe43d0f338808">More...</a><br /></td></tr>
 <tr class="separator:a91138d747c43e157f27fe43d0f338808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1be22a37709d73fbc4580b00a396c0b9"><td class="memItemLeft" align="right" valign="top"><a id="a1be22a37709d73fbc4580b00a396c0b9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>assert_true</b> (bool b, const string &amp;&amp;message)</td></tr>
+<tr class="memitem:a1be22a37709d73fbc4580b00a396c0b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelGamal.html#a1be22a37709d73fbc4580b00a396c0b9">assert_true</a> (bool b, const string &amp;&amp;message)</td></tr>
+<tr class="memdesc:a1be22a37709d73fbc4580b00a396c0b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function used for unit tests.  <a href="#a1be22a37709d73fbc4580b00a396c0b9">More...</a><br /></td></tr>
 <tr class="separator:a1be22a37709d73fbc4580b00a396c0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c9abe3957874b9c4bb9924daafc3ba2"><td class="memItemLeft" align="right" valign="top"><a id="a2c9abe3957874b9c4bb9924daafc3ba2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>test</b> ()</td></tr>
-<tr class="separator:a2c9abe3957874b9c4bb9924daafc3ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:af54bb3d0000ef0479ad0d9f9ad7b1a6a"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelGamal.html#af54bb3d0000ef0479ad0d9f9ad7b1a6a">alphabet</a> = &quot; abcdefghijklmnopqrstuvwxyz&quot;</td></tr>
+<tr class="memdesc:af54bb3d0000ef0479ad0d9f9ad7b1a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The alphabet upon which the encryption and decryption takes place.  <a href="#af54bb3d0000ef0479ad0d9f9ad7b1a6a">More...</a><br /></td></tr>
+<tr class="separator:af54bb3d0000ef0479ad0d9f9ad7b1a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6af729a807120cdf78282b9426eac01"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelGamal.html#aa6af729a807120cdf78282b9426eac01">separator</a> = '\n'</td></tr>
+<tr class="memdesc:aa6af729a807120cdf78282b9426eac01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Separator of keys in the serialization and deserialization of public and private keys.  <a href="#aa6af729a807120cdf78282b9426eac01">More...</a><br /></td></tr>
+<tr class="separator:aa6af729a807120cdf78282b9426eac01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="namespaceelGamal.html" title="elGamal class, defines, public_key_t, private_key_t, ciphertext_t. Functions : generateKey - generate...">elGamal</a> class, defines, <a class="el" href="structelGamal_1_1public__key__t.html">public_key_t</a>, <a class="el" href="structelGamal_1_1private__key__t.html">private_key_t</a>, <a class="el" href="structelGamal_1_1ciphertext__t.html">ciphertext_t</a>. Functions : generateKey - generates a pair of containing public and private key encrypt, decrypt - encrypts and decrypts, works on blocks encrypt_s, decrypt_s - as above but works on strings </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+<div class="textblock"><p><a class="el" href="namespaceelGamal.html" title="elGamal class, defines, public_key_t, private_key_t, ciphertext_t. Functions : generateKey - generate...">elGamal</a> class, defines, <a class="el" href="structelGamal_1_1public__key__t.html" title="Structured public key, used in encryption. Contains: ">public_key_t</a>, <a class="el" href="structelGamal_1_1private__key__t.html" title="Structured private key, used in decryption. Contains: ">private_key_t</a>, <a class="el" href="structelGamal_1_1ciphertext__t.html" title="Vector of ciphertext blocks. ">ciphertext_t</a>. Functions : generateKey - generates a pair of containing public and private key encrypt, decrypt - encrypts and decrypts, works on blocks encrypt_s, decrypt_s - as above but works on strings </p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="ab2883bf41ce8d738e2428c8ae81b0245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2883bf41ce8d738e2428c8ae81b0245">&#9670;&nbsp;</a></span>bigint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef mpz_class <a class="el" href="namespaceelGamal.html#ab2883bf41ce8d738e2428c8ae81b0245">elGamal::bigint</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bigint class used everywhere within this algorithm. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a1be22a37709d73fbc4580b00a396c0b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be22a37709d73fbc4580b00a396c0b9">&#9670;&nbsp;</a></span>assert_true()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elGamal::assert_true </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&amp;&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper function used for unit tests. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>- boolean </td></tr>
+    <tr><td class="paramname">message</td><td>- Error message thrown in case b does not check </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a7d43bd19f4fbfe6cca1232a7b2f23af6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d43bd19f4fbfe6cca1232a7b2f23af6">&#9670;&nbsp;</a></span>decrypt()</h2>
 
@@ -145,11 +225,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>test</b> ()</td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Decrypts the ciphertext (<a class="el" href="structelGamal_1_1ciphertext__t.html">ciphertext_t</a>) using a key. </p>
+<p>Decrypts the ciphertext (<a class="el" href="structelGamal_1_1ciphertext__t.html" title="Vector of ciphertext blocks. ">ciphertext_t</a>) using a key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td><a class="el" href="structelGamal_1_1private__key__t.html">private_key_t</a>, returned by generateKey </td></tr>
-    <tr><td class="paramname">ciphertext</td><td><a class="el" href="structelGamal_1_1ciphertext__t.html">ciphertext_t</a> returned by the encrypt method</td></tr>
+    <tr><td class="paramname">key</td><td><a class="el" href="structelGamal_1_1private__key__t.html" title="Structured private key, used in decryption. Contains: ">private_key_t</a>, returned by generateKey </td></tr>
+    <tr><td class="paramname">ciphertext</td><td><a class="el" href="structelGamal_1_1ciphertext__t.html" title="Vector of ciphertext blocks. ">ciphertext_t</a> returned by the encrypt method</td></tr>
   </table>
   </dd>
 </dl>
@@ -183,10 +263,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>test</b> ()</td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Decrypts the ciphertext (<a class="el" href="structelGamal_1_1ciphertext__t.html">ciphertext_t</a>) using a key. </p>
+<p>Decrypts the ciphertext (<a class="el" href="structelGamal_1_1ciphertext__t.html" title="Vector of ciphertext blocks. ">ciphertext_t</a>) using a key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td><a class="el" href="structelGamal_1_1private__key__t.html">private_key_t</a>, returned by generateKey </td></tr>
+    <tr><td class="paramname">key</td><td><a class="el" href="structelGamal_1_1private__key__t.html" title="Structured private key, used in decryption. Contains: ">private_key_t</a>, returned by generateKey </td></tr>
     <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
@@ -224,7 +304,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>test</b> ()</td></tr>
 <p>Encrypts a plaintext given as string using the provided key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td><a class="el" href="structelGamal_1_1public__key__t.html">public_key_t</a>, returned by generateKey </td></tr>
+    <tr><td class="paramname">key</td><td><a class="el" href="structelGamal_1_1public__key__t.html" title="Structured public key, used in encryption. Contains: ">public_key_t</a>, returned by generateKey </td></tr>
     <tr><td class="paramname">plaintext</td><td>string, any string within the alphabet of the <a class="el" href="namespaceelGamal.html" title="elGamal class, defines, public_key_t, private_key_t, ciphertext_t. Functions : generateKey - generate...">elGamal</a> class</td></tr>
   </table>
   </dd>
@@ -262,7 +342,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>test</b> ()</td></tr>
 <p>Encrypts a plaintext given as string using the provided key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td><a class="el" href="structelGamal_1_1public__key__t.html">public_key_t</a>, returned by generateKey </td></tr>
+    <tr><td class="paramname">key</td><td><a class="el" href="structelGamal_1_1public__key__t.html" title="Structured public key, used in encryption. Contains: ">public_key_t</a>, returned by generateKey </td></tr>
     <tr><td class="paramname">plaintext</td><td>string, any string within the alphabet of the <a class="el" href="namespaceelGamal.html" title="elGamal class, defines, public_key_t, private_key_t, ciphertext_t. Functions : generateKey - generate...">elGamal</a> class</td></tr>
   </table>
   </dd>
@@ -287,7 +367,57 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>test</b> ()</td></tr>
 </div><div class="memdoc">
 
 <p>Generates public and private key. </p>
-<dl class="section return"><dt>Returns</dt><dd>A pair containg &lt;<a class="el" href="structelGamal_1_1public__key__t.html">public_key_t</a>, <a class="el" href="structelGamal_1_1private__key__t.html">private_key_t</a>&gt; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pair containg &lt;<a class="el" href="structelGamal_1_1public__key__t.html" title="Structured public key, used in encryption. Contains: ">public_key_t</a>, <a class="el" href="structelGamal_1_1private__key__t.html" title="Structured private key, used in decryption. Contains: ">private_key_t</a>&gt; </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="af54bb3d0000ef0479ad0d9f9ad7b1a6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af54bb3d0000ef0479ad0d9f9ad7b1a6a">&#9670;&nbsp;</a></span>alphabet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string elGamal::alphabet = &quot; abcdefghijklmnopqrstuvwxyz&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The alphabet upon which the encryption and decryption takes place. </p>
+<dl class="section return"><dt>Returns</dt><dd>string - alphabet as a sequence of distinct characters </dd></dl>
+
+</div>
+</div>
+<a id="aa6af729a807120cdf78282b9426eac01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6af729a807120cdf78282b9426eac01">&#9670;&nbsp;</a></span>separator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char elGamal::separator = '\n'</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Separator of keys in the serialization and deserialization of public and private keys. </p>
 
 </div>
 </div>

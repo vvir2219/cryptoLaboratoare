@@ -5,25 +5,29 @@
 \mbox{\hyperlink{namespaceelGamal}{el\+Gamal}} class, defines, \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}. Functions \+: generate\+Key -\/ generates a pair of containing public and private key encrypt, decrypt -\/ encrypts and decrypts, works on blocks encrypt\+\_\+s, decrypt\+\_\+s -\/ as above but works on strings  
 
 
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceelGamal_1_1anonymous__namespace_02elGamal_8cpp_03}{anonymous\+\_\+namespace\{el\+Gamal.\+cpp\}}}
+\begin{DoxyCompactList}\small\item\em Internal state of the \mbox{\hyperlink{namespaceelGamal}{el\+Gamal}} algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structelGamal_1_1ciphertext__block__t}{ciphertext\+\_\+block\+\_\+t}}
-\item 
+\begin{DoxyCompactList}\small\item\em Ciphertext block as a pair of integers (alpha, beta) \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}
-\item 
+\begin{DoxyCompactList}\small\item\em Vector of ciphertext blocks. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structelGamal_1_1plaintext__block__t}{plaintext\+\_\+block\+\_\+t}}
-\item 
+\begin{DoxyCompactList}\small\item\em Text block as an integer. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}}
-\item 
+\begin{DoxyCompactList}\small\item\em Structured private key, used in decryption. Contains\+: \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Structured public key, used in encryption. Contains\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}\label{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}} 
-typedef mpz\+\_\+class {\bfseries bigint}
-\end{DoxyCompactItemize}
+typedef mpz\+\_\+class \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{bigint}}
+\begin{DoxyCompactList}\small\item\em Bigint class used everywhere within this algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -37,18 +41,51 @@ string \mbox{\hyperlink{namespaceelGamal_af1b50ebf015473027eadf9ba9f12ba95}{encr
 \begin{DoxyCompactList}\small\item\em Encrypts a plaintext given as string using the provided key. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{namespaceelGamal_a91138d747c43e157f27fe43d0f338808}{decrypt\+\_\+s}} (const \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}} \&key, string ciphertext)
 \begin{DoxyCompactList}\small\item\em Decrypts the ciphertext (\mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}) using a key. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{namespaceelGamal_a1be22a37709d73fbc4580b00a396c0b9}\label{namespaceelGamal_a1be22a37709d73fbc4580b00a396c0b9}} 
-void {\bfseries assert\+\_\+true} (bool b, const string \&\&message)
+void \mbox{\hyperlink{namespaceelGamal_a1be22a37709d73fbc4580b00a396c0b9}{assert\+\_\+true}} (bool b, const string \&\&message)
+\begin{DoxyCompactList}\small\item\em Helper function used for unit tests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{namespaceelGamal_a2c9abe3957874b9c4bb9924daafc3ba2}\label{namespaceelGamal_a2c9abe3957874b9c4bb9924daafc3ba2}} 
-void {\bfseries test} ()
-\end{DoxyCompactItemize}
+static string \mbox{\hyperlink{namespaceelGamal_af54bb3d0000ef0479ad0d9f9ad7b1a6a}{alphabet}} = \char`\"{} abcdefghijklmnopqrstuvwxyz\char`\"{}
+\begin{DoxyCompactList}\small\item\em The alphabet upon which the encryption and decryption takes place. \end{DoxyCompactList}\item 
+static char \mbox{\hyperlink{namespaceelGamal_aa6af729a807120cdf78282b9426eac01}{separator}} = \textquotesingle{}\textbackslash{}n\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Separator of keys in the serialization and deserialization of public and private keys. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 \mbox{\hyperlink{namespaceelGamal}{el\+Gamal}} class, defines, \mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1ciphertext__t}{ciphertext\+\_\+t}}. Functions \+: generate\+Key -\/ generates a pair of containing public and private key encrypt, decrypt -\/ encrypts and decrypts, works on blocks encrypt\+\_\+s, decrypt\+\_\+s -\/ as above but works on strings 
 
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}\label{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}} 
+\index{el\+Gamal@{el\+Gamal}!bigint@{bigint}}
+\index{bigint@{bigint}!el\+Gamal@{el\+Gamal}}
+\subsubsection{\texorpdfstring{bigint}{bigint}}
+{\footnotesize\ttfamily typedef mpz\+\_\+class \mbox{\hyperlink{namespaceelGamal_ab2883bf41ce8d738e2428c8ae81b0245}{el\+Gamal\+::bigint}}}
+
+
+
+Bigint class used everywhere within this algorithm. 
+
+
+
 \subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceelGamal_a1be22a37709d73fbc4580b00a396c0b9}\label{namespaceelGamal_a1be22a37709d73fbc4580b00a396c0b9}} 
+\index{el\+Gamal@{el\+Gamal}!assert\+\_\+true@{assert\+\_\+true}}
+\index{assert\+\_\+true@{assert\+\_\+true}!el\+Gamal@{el\+Gamal}}
+\subsubsection{\texorpdfstring{assert\+\_\+true()}{assert\_true()}}
+{\footnotesize\ttfamily void el\+Gamal\+::assert\+\_\+true (\begin{DoxyParamCaption}\item[{bool}]{b,  }\item[{const string \&\&}]{message }\end{DoxyParamCaption})}
+
+
+
+Helper function used for unit tests. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & -\/ boolean \\
+\hline
+{\em message} & -\/ Error message thrown in case b does not check \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{namespaceelGamal_a7d43bd19f4fbfe6cca1232a7b2f23af6}\label{namespaceelGamal_a7d43bd19f4fbfe6cca1232a7b2f23af6}} 
 \index{el\+Gamal@{el\+Gamal}!decrypt@{decrypt}}
 \index{decrypt@{decrypt}!el\+Gamal@{el\+Gamal}}
@@ -142,3 +179,29 @@ Generates public and private key.
 \begin{DoxyReturn}{Returns}
 A pair containg $<$\mbox{\hyperlink{structelGamal_1_1public__key__t}{public\+\_\+key\+\_\+t}}, \mbox{\hyperlink{structelGamal_1_1private__key__t}{private\+\_\+key\+\_\+t}}$>$ 
 \end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceelGamal_af54bb3d0000ef0479ad0d9f9ad7b1a6a}\label{namespaceelGamal_af54bb3d0000ef0479ad0d9f9ad7b1a6a}} 
+\index{el\+Gamal@{el\+Gamal}!alphabet@{alphabet}}
+\index{alphabet@{alphabet}!el\+Gamal@{el\+Gamal}}
+\subsubsection{\texorpdfstring{alphabet}{alphabet}}
+{\footnotesize\ttfamily string el\+Gamal\+::alphabet = \char`\"{} abcdefghijklmnopqrstuvwxyz\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The alphabet upon which the encryption and decryption takes place. 
+
+\begin{DoxyReturn}{Returns}
+string -\/ alphabet as a sequence of distinct characters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceelGamal_aa6af729a807120cdf78282b9426eac01}\label{namespaceelGamal_aa6af729a807120cdf78282b9426eac01}} 
+\index{el\+Gamal@{el\+Gamal}!separator@{separator}}
+\index{separator@{separator}!el\+Gamal@{el\+Gamal}}
+\subsubsection{\texorpdfstring{separator}{separator}}
+{\footnotesize\ttfamily char el\+Gamal\+::separator = \textquotesingle{}\textbackslash{}n\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Separator of keys in the serialization and deserialization of public and private keys. 
+

@@ -5,13 +5,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: elGamal::public_key_t Struct Reference</title>
+<title>ElGamal encryption: elGamal::public_key_t Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -21,8 +27,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">ElGamal encryption
    </div>
+   <div id="projectbrief">Basic implementation of ElGamal encryption scheme</div>
   </td>
  </tr>
  </tbody>
@@ -73,30 +80,153 @@ $(function() {
 <div class="title">elGamal::public_key_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Structured public key, used in encryption. Contains:  
+ <a href="structelGamal_1_1public__key__t.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="elGamal_8h_source.html">elGamal.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a0f62fb91be391d0ca4abfa147626a0c8"><td class="memItemLeft" align="right" valign="top"><a id="a0f62fb91be391d0ca4abfa147626a0c8"></a>
-bigint&#160;</td><td class="memItemRight" valign="bottom"><b>p</b></td></tr>
+<tr class="memitem:a0f62fb91be391d0ca4abfa147626a0c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceelGamal.html#ab2883bf41ce8d738e2428c8ae81b0245">bigint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelGamal_1_1public__key__t.html#a0f62fb91be391d0ca4abfa147626a0c8">p</a></td></tr>
 <tr class="separator:a0f62fb91be391d0ca4abfa147626a0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa54f804adb7e54538f1e34e7737167e7"><td class="memItemLeft" align="right" valign="top"><a id="aa54f804adb7e54538f1e34e7737167e7"></a>
-bigint&#160;</td><td class="memItemRight" valign="bottom"><b>g</b></td></tr>
+<tr class="memitem:aa54f804adb7e54538f1e34e7737167e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceelGamal.html#ab2883bf41ce8d738e2428c8ae81b0245">bigint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelGamal_1_1public__key__t.html#aa54f804adb7e54538f1e34e7737167e7">g</a></td></tr>
 <tr class="separator:aa54f804adb7e54538f1e34e7737167e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3a62139e6cffaffbb03178eff18ea76"><td class="memItemLeft" align="right" valign="top"><a id="ad3a62139e6cffaffbb03178eff18ea76"></a>
-bigint&#160;</td><td class="memItemRight" valign="bottom"><b>ga</b></td></tr>
+<tr class="memitem:ad3a62139e6cffaffbb03178eff18ea76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceelGamal.html#ab2883bf41ce8d738e2428c8ae81b0245">bigint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelGamal_1_1public__key__t.html#ad3a62139e6cffaffbb03178eff18ea76">ga</a></td></tr>
 <tr class="separator:ad3a62139e6cffaffbb03178eff18ea76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a046edae80d5819c231b4c2dc64986202"><td class="memItemLeft" align="right" valign="top"><a id="a046edae80d5819c231b4c2dc64986202"></a>
-std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, const <a class="el" href="structelGamal_1_1public__key__t.html">public_key_t</a> &amp;k)</td></tr>
+<tr class="memitem:a046edae80d5819c231b4c2dc64986202"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelGamal_1_1public__key__t.html#a046edae80d5819c231b4c2dc64986202">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="structelGamal_1_1public__key__t.html">public_key_t</a> &amp;k)</td></tr>
 <tr class="separator:a046edae80d5819c231b4c2dc64986202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8e3db0096733e107dfb53f121c9e8e"><td class="memItemLeft" align="right" valign="top"><a id="a9d8e3db0096733e107dfb53f121c9e8e"></a>
-std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (std::istream &amp;is, <a class="el" href="structelGamal_1_1public__key__t.html">public_key_t</a> &amp;k)</td></tr>
+<tr class="memitem:a9d8e3db0096733e107dfb53f121c9e8e"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelGamal_1_1public__key__t.html#a9d8e3db0096733e107dfb53f121c9e8e">operator&gt;&gt;</a> (std::istream &amp;is, <a class="el" href="structelGamal_1_1public__key__t.html">public_key_t</a> &amp;k)</td></tr>
 <tr class="separator:a9d8e3db0096733e107dfb53f121c9e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Structured public key, used in encryption. Contains: </p>
+<ul>
+<li>p : a big prime</li>
+<li>g : a generator of Zp</li>
+<li>ga : g^a </li>
+</ul>
+</div><h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a046edae80d5819c231b4c2dc64986202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a046edae80d5819c231b4c2dc64986202">&#9670;&nbsp;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structelGamal_1_1public__key__t.html">public_key_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d8e3db0096733e107dfb53f121c9e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d8e3db0096733e107dfb53f121c9e8e">&#9670;&nbsp;</a></span>operator&gt;&gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structelGamal_1_1public__key__t.html">public_key_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa54f804adb7e54538f1e34e7737167e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa54f804adb7e54538f1e34e7737167e7">&#9670;&nbsp;</a></span>g</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceelGamal.html#ab2883bf41ce8d738e2428c8ae81b0245">bigint</a> elGamal::public_key_t::g</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3a62139e6cffaffbb03178eff18ea76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a62139e6cffaffbb03178eff18ea76">&#9670;&nbsp;</a></span>ga</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceelGamal.html#ab2883bf41ce8d738e2428c8ae81b0245">bigint</a> elGamal::public_key_t::ga</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f62fb91be391d0ca4abfa147626a0c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f62fb91be391d0ca4abfa147626a0c8">&#9670;&nbsp;</a></span>p</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceelGamal.html#ab2883bf41ce8d738e2428c8ae81b0245">bigint</a> elGamal::public_key_t::p</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>elGamal.cpp</li>
+<li><a class="el" href="elGamal_8h_source.html">elGamal.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

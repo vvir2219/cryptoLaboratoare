@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['decrypt',['decrypt',['../namespaceelGamal.html#a7d43bd19f4fbfe6cca1232a7b2f23af6',1,'elGamal']]],
-  ['decrypt_5fs',['decrypt_s',['../namespaceelGamal.html#a91138d747c43e157f27fe43d0f338808',1,'elGamal']]]
+  ['beta',['beta',['../structelGamal_1_1ciphertext__block__t.html#ab49b638b6d57044532b92dc6dece00af',1,'elGamal::ciphertext_block_t']]],
+  ['bigint',['bigint',['../namespaceelGamal.html#ab2883bf41ce8d738e2428c8ae81b0245',1,'elGamal']]]
 ];

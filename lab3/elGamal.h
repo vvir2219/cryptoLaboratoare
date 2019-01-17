@@ -12,6 +12,62 @@
 #ifndef ELGAMAL_H_JEUXOVXY
 #define ELGAMAL_H_JEUXOVXY
 
+/*! \mainpage
+ *
+ * \section intro_sec Introduction
+ *
+ * In cryptography, the ElGamal encryption system is an asymmetric key encryption algorithm for public-key cryptography
+ * which is based on the Diffie–Hellman key exchange.
+ * The system provides an additional layer of security by asymmetrically encrypting keys previously used for symmetric message encryption.
+ * It was described by Taher Elgamal in 1985. ElGamal encryption is used in the free GNU Privacy Guard software, recent versions of PGP, and other cryptosystems.
+ * The Digital Signature Algorithm (DSA) is a variant of the ElGamal signature scheme, which should not be confused with ElGamal encryption.
+ * ElGamal encryption can be defined over any cyclic group G.
+ * Its security depends upon the difficulty of a certain problem in G related to computing discrete logarithms.
+ *
+ * \section install_sec The algorithm
+ * ElGamal encryption consists of three components: the key generator, the encryption algorithm, and the decryption algorithm.
+ *
+ * \subsection key_generation Key generation
+ *
+ * The key generator works as follows:
+ *
+ * - Alice generates an efficient description of a cyclic group G, of order q, with generator g.
+ * - Alice chooses an x randomly from [1..q-1].
+ * - Alice computes h = g^x.
+ * - Alice publishes h, along with the description of G, q, g as her public key.
+ *   Alice retains x as her private key, which must be kept secret.
+ *
+ * \subsection encryption Encryption
+ *
+ * The encryption algorithm works as follows: to encrypt a message m to Alice under her public key (G,q,g,h),
+ *
+ * - Bob chooses a random y from [1...q-1], then calculates alpha =g^y.
+ * - Bob calculates the shared secret s = h^y = g^xy.
+ * - Bob maps his message m onto an element m' of G.
+ * - Bob calculates beta = m' * s.
+ * - Bob sends the ciphertext (alpha, beta) = (g^y, m' * h^y) = (g^y, m' * g^xy)} to Alice.
+ *
+ * Note that one can easily find h^y if one knows m'.
+ * Therefore, a new y is generated for every message to improve security. For this reason, y is also called an ephemeral key.
+ *
+ * \subsection decryption Decryption
+ *
+ * The decryption algorithm works as follows: to decrypt a ciphertext (alpha, beta) with her private key x,
+ *
+ * - Alice calculates the shared secret s:=alpha^x
+ * - and then computes m':=beta * s^(-1) which she then converts back into the plaintext message m,
+ *   where s^(-1) is the inverse of s in the group G.
+ *   (E.g. modular multiplicative inverse if G is a subgroup of a multiplicative group of integers modulo n).
+ *
+ * The decryption algorithm produces the intended message, since
+ *
+ *     beta * s^(-1) = m' * h^y * (g^xy)^(-1) = m' * g^xy * g^(-xy) = m'.
+ *
+ * \subsection credits Credits
+ * - Vitca Vlad Ilie (grupa 237)
+ * - Hanc Bogdan (grupa 332)
+ */
+
 /**
  * @brief elGamal class, defines, public_key_t, private_key_t, ciphertext_t.
  * Functions : generateKey - generates a pair of containing public and private key
@@ -25,11 +81,33 @@ namespace elGamal
 		  std::string,
 		  std::reverse;
 
+	/**
+	 * @brief Bigint class used everywhere within this algorithm.
+	 */
 	typedef mpz_class bigint;
 
-	static string alphabet = " `1234567890-=~!@#$%^&*()_+qwertyuiop[{}]\\|asdfghjkl;:'\"zxcvbnm,<.>/?QWERTYUIOPASDFGHJKLZXCVBNM\n";
+	/**
+	 * @brief The alphabet upon which the encryption and decryption takes place
+	 *
+	 * @return string - alphabet as a sequence of distinct characters
+	 */
+	//static string alphabet = " `1234567890-=~!@#$%^&*()_+qwertyuiop[{}]\\|asdfghjkl;:'\"zxcvbnm,<.>/?QWERTYUIOPASDFGHJKLZXCVBNM\n";
+	static string alphabet = " abcdefghijklmnopqrstuvwxyz";
+
+
+	/**
+	 * @brief Separator of keys in the serialization and deserialization of
+	 * public and private keys
+	 */
 	static char separator = '\n';
 
+	/**
+	 * @brief Structured public key, used in encryption.
+	 * Contains:
+	 *  - p : a big prime
+	 *  - g : a generator of Zp
+	 *  - ga : g^a
+	 */
 	struct public_key_t {
 		bigint p, g, ga;
 
@@ -43,6 +121,12 @@ namespace elGamal
 		}
 	};
 
+	/**
+	 * @brief Structured private key, used in decryption.
+	 * Contains:
+	 *  - p : a big prime
+	 *  - a : random number which is used as private key
+	 */
 	struct private_key_t {
 		bigint p, a;
 
@@ -56,14 +140,23 @@ namespace elGamal
 		}
 	};
 
+	/**
+	 * @brief Text block as an integer
+	 */
 	struct plaintext_block_t {
 		bigint value;
 	};
 
+	/**
+	 * @brief Ciphertext block as a pair of integers (alpha, beta)
+	 */
 	struct ciphertext_block_t {
 		bigint alpha, beta;
 	};
 
+	/**
+	 * @brief Vector of ciphertext blocks
+	 */
 	struct ciphertext_t {
 		vector<ciphertext_block_t> val;
 	};
@@ -111,8 +204,6 @@ namespace elGamal
 	 * @return string - the plaintext
 	 */
 	string decrypt_s(const private_key_t& key, string ciphertext);
-
-	void test();
 } /* elGamal */
 
 #endif /* end of include guard: ELGAMAL_H_JEUXOVXY */
