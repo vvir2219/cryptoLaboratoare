@@ -27,9 +27,46 @@ namespace elGamal
 
 	typedef mpz_class bigint;
 
-	struct public_key_t;
-	struct private_key_t;
-	struct ciphertext_t;
+	static string alphabet = " `1234567890-=~!@#$%^&*()_+qwertyuiop[{}]\\|asdfghjkl;:'\"zxcvbnm,<.>/?QWERTYUIOPASDFGHJKLZXCVBNM\n";
+	static char separator = '\n';
+
+	struct public_key_t {
+		bigint p, g, ga;
+
+		friend std::ostream & operator<<(std::ostream &os, const public_key_t& k) {
+			os << k.g << separator << k.ga << separator << k.p;
+			return os;
+		}
+		friend std::istream& operator >>(std::istream &is, public_key_t& k) {
+			is >> k.g >> k.ga >> k.p;
+			return is;
+		}
+	};
+
+	struct private_key_t {
+		bigint p, a;
+
+		friend std::ostream & operator<<(std::ostream &os, const private_key_t& k) {
+			os << k.a << separator << k.p;
+			return os;
+		}
+		friend std::istream& operator >>(std::istream &is, private_key_t& k) {
+			is >> k.a >> k.p;
+			return is;
+		}
+	};
+
+	struct plaintext_block_t {
+		bigint value;
+	};
+
+	struct ciphertext_block_t {
+		bigint alpha, beta;
+	};
+
+	struct ciphertext_t {
+		vector<ciphertext_block_t> val;
+	};
 
 	/**
 	 * @brief Generates public and private key

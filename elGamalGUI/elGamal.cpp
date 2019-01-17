@@ -11,8 +11,6 @@ namespace elGamal
 		static unsigned int security_order = 50;
 		static vector<bigint> smallPrimes{};
 		static gmp_randstate_t randstate;
-		static string alphabet = " `1234567890-=~!@#$%^&*()_+qwertyuiop[{}]\\|asdfghjkl;:'\"zxcvbnm,<.>/?QWERTYUIOPASDFGHJKLZXCVBNM";
-		static char separator = '\n';
 
 		void initialize() {
 			smallPrimes.clear();
@@ -30,15 +28,6 @@ namespace elGamal
 			unsigned long int seed = spec.tv_nsec;
 			gmp_randseed_ui(randstate, seed);
 			initialized = true;
-		}
-
-		mp_bitcnt_t no_bits(const bigint& n) {
-			mp_bitcnt_t remaining = mpz_popcount(n.get_mpz_t()), last = -1;
-			while (remaining) {
-				last = mpz_scan1(n.get_mpz_t(), last + 1);
-				remaining--;
-			}
-			return last;
 		}
 
 		bool is_prime(const bigint& n) {
@@ -120,46 +109,10 @@ namespace elGamal
 			return no_digits(p, alphabet.length()) - 1;
 		}
 	}
-
-	struct public_key_t {
-		bigint p, g, ga;
-
-		friend std::ostream & operator<<(std::ostream &os, const public_key_t& k) {
-			os << k.g << separator << k.ga << separator << k.p;
-			return os;
-		}
-		friend std::istream& operator >>(std::istream &is, public_key_t& k) {
-			is >> k.g >> k.ga >> k.p;
-			return is;
-		}
-	};
-
-	struct private_key_t {
-		bigint p, a;
-
-		friend std::ostream & operator<<(std::ostream &os, const private_key_t& k) {
-			os << k.a << separator << k.p;
-			return os;
-		}
-		friend std::istream& operator >>(std::istream &is, private_key_t& k) {
-			is >> k.a >> k.p;
-			return is;
-		}
-	};
-
-	struct plaintext_block_t {
-		bigint value;
-	};
-
-	struct ciphertext_block_t {
-		bigint alpha, beta;
-	};
-
-	struct ciphertext_t {
-		vector<ciphertext_block_t> val;
-	};
-
 	pair<public_key_t, private_key_t> generateKey() {
+        if (!initialized)
+            initialize();
+
 		bigint p;
 		bigint q;
 		do {
@@ -206,6 +159,9 @@ namespace elGamal
 	}
 
 	ciphertext_t encrypt(const public_key_t& key, const string& _plaintext) {
+        if (!initialized)
+            initialize();
+
 		vector<ciphertext_block_t> encrypted;
 
 		string plaintext = _plaintext;
@@ -274,16 +230,5 @@ namespace elGamal
 	void assert_true(bool b, const string&& message) {
 		if (!b)
 			throw message;
-	}
-
-	void test() {
-		using namespace std;
-
-		auto key = generateKey();
-		auto ciphertext = encrypt_s(key.first, "   ana are mere");
-		cout << "Ciphertext: " << ciphertext << "\n";
-		cout << "Text: \"" << decrypt_s(key.second, ciphertext) << "\"\n";
-
-		initialized = false;
 	}
 } /* elGamal */
